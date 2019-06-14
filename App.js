@@ -1,13 +1,18 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { Button, Text, View } from 'react-native';
 import { styles } from './styles/styles.js'
 
-export default class App extends React.Component {
-   render() {
-      return (
-         <View style={styles.container}>
-            <Text>Welcome to Tutorialspoint</Text>
-         </View>
-      );
-   }
+
+const App = () => {
+  const handlePress = () => false
+  return (
+     <view style={styles.container}>
+     <Button
+        onPress = {handlePress}
+        title = "Red button!"
+        color = "red" 
+     />
+     </view>
+  );
 }
+export default App
