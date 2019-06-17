@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
-import { Button, Text, View } from 'react-native';
+import { AppRegistry, Alert, Button, Text, View } from 'react-native';
 import { styles } from './styles/styles.js'
 
 
-const App = () => {
-  const handlePress = () => false
-  return (
-     <view style={styles.container}>
-     <Button
-        onPress = {handlePress}
-        title = "Red button!"
-        color = "red" 
-     />
-     </view>
-  );
+export default class App extends Component{
+   render(){
+      return(
+         <View style={styles.container}>
+            <View>
+               <Button onPress={() => {Alert.alert("Salve, lei ha premuto il bottone!")}}
+               title="Questo è un bottone"
+               color='green'
+               borderRadius='10'
+               >
+
+               </Button>
+            </View>   
+         </View>
+      )
+   }
 }
-export default App
+AppRegistry.registerComponent('AppRicettario', () => App);
