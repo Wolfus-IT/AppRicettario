@@ -1,34 +1,25 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View, StyleSheet, Button, Image } from 'react-native';
+import { createDrawerNavigator, createAppContainer, createStackNavigator } from 'react-navigation';
 
-import { Text, View } from 'react-native';
+import HomeScreen from './ui/home/HomeScreen'
+import RicetteScreen from './ui/ricette/RicetteScreen'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const MyStackNavigator = createStackNavigator({
+  Home: {
+    screen: HomeScreen,
+  },
+  Ricette: {
+    screen: RicetteScreen,
   },
 });
 
+const MyDrawerNavigator = createDrawerNavigator({
+  Impostazioni: MyStackNavigator,
+  Contattaci: MyStackNavigator
+})
+
+export default createAppContainer(MyDrawerNavigator);
 
 
 
-export default class HelloWorldApp extends Component {
-  render() {
-    return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-        <Text>Hello, world!</Text>
-      </View>
-    );
-  }
-}
