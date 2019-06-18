@@ -15,7 +15,7 @@ class HomeScreen extends React.Component {
       return (
         <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
          
-          <Button onPress={this.onPressButton} title='ciao'/>
+          <Button onPress={this.onPressButton} title='INIZIA'/>
         </View>
       );
     }
