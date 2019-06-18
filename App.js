@@ -1,25 +1,25 @@
-import React, { Component } from 'react';
-import { AppRegistry, Alert, TouchableHighlight, Text, View } from 'react-native';
-import { styles } from './styles/styles.js'
+import React from 'react';
+import { Text, View, StyleSheet, Button, Image } from 'react-native';
+import { createDrawerNavigator, createAppContainer, createStackNavigator } from 'react-navigation';
+
+import HomeScreen from './ui/home/HomeScreen'
+import RicetteScreen from './ui/ricette/RicetteScreen'
+
+const MyStackNavigator = createStackNavigator({
+  Home: {
+    screen: HomeScreen,
+  },
+  Ricette: {
+    screen: RicetteScreen,
+  },
+});
+
+const MyDrawerNavigator = createDrawerNavigator({
+  Impostazioni: MyStackNavigator,
+  Contattaci: MyStackNavigator
+})
+
+export default createAppContainer(MyDrawerNavigator);
 
 
-export default class App extends Component{
-   render(){
-      return(
-         <View style={styles.container}>
-            <TouchableHighlight
-               style={styles.submit}
-               onPress={() => this.submitSuggestion(this.props)}
-               underlayColor='blue'>
-               <Text style={[styles.submitText]}>Button</Text>
-            </TouchableHighlight>
-         </View>
-      )
-   }
 
-
-   submitSuggestion(){
-      Alert.alert("This is a button")
-   }
-}
-AppRegistry.registerComponent('AppRicettario', () => App);
