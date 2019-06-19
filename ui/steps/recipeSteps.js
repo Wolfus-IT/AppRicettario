@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, View, StyleSheet, Button, Image } from 'react-native';
 
-class RicetteScreen extends React.Component {
+class recipeSteps extends React.Component {
   static navigationOptions = {
-    title: 'Ecco i passaggi...',
+    title: 'Ecco i passaggi da seguire...',
   };
   
     render() {
@@ -15,12 +15,5 @@ class RicetteScreen extends React.Component {
     }
   }
 
-  const iconStyle = StyleSheet.create({
-    icon: {
-      width: 24,
-      height: 24,
-    },
-  });
-
-  export default RicetteScreen;
+export default recipeSteps;
   
