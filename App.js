@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, Button, Image } from 'react-native';
+import { Text, View, Button, Image } from 'react-native';
 import { createDrawerNavigator, createAppContainer, createStackNavigator } from 'react-navigation';
 
 import HomeScreen from './ui/list/listComponents'

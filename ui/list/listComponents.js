@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';

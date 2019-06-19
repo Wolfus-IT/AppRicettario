@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {
-  StyleSheet,
-  View
-} from 'react-native';
+import { StyleSheet, View} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { styles } from '../../styles/styles';
+
 
 export default class HeaderButton extends Component {
 
