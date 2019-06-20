@@ -2,16 +2,21 @@ import React from 'react';
 import { Text, View, Button, Image } from 'react-native';
 import { createDrawerNavigator, createAppContainer, createStackNavigator } from 'react-navigation';
 
-import HomeScreen from './ui/list/listComponents'
-import RicetteScreen from './ui/steps/recipeSteps'
+import listComponents from './pages/list/listComponents'
+import recipeSteps from './pages/steps/recipeSteps'
+import home from './pages/home/home'
 
 const MyStackNavigator = createStackNavigator({
+  Home: {
+    screen: home,
+  },
   List: {
-    screen: HomeScreen,
+    screen: listComponents,
   },
   Ricetta: {
-    screen: RicetteScreen,
+    screen: recipeSteps,
   },
+
 });
 
 const MyDrawerNavigator = createDrawerNavigator({

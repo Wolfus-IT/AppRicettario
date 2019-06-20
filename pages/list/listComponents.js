@@ -8,10 +8,6 @@ class listComponents extends React.Component {
     title: 'Lista',
   };
 
-  onContentSizeChange = (contentWidth, contentHeight) => {
-
-  };
-
   onPressButton = () => {
     this.props.navigation.navigate('Ricetta')
   }
@@ -21,18 +17,20 @@ class listComponents extends React.Component {
         //external
         <View style={{flex:1}}>
           {/*testo*/}
-          <View>
-            <ScrollView>
-        
-              <Text >
-                ciao
-              </Text>
-              <Text>
-                ciao
-              </Text>
-        
-            </ScrollView>
-          </View>
+          <SafeAreaView style={{ flex: 6.7, backgroundColor: '#fff'}}>
+            <View>
+              <ScrollView>
+          
+                <Text >
+                  hello
+                </Text>
+                <Text>
+                  ciao
+                </Text>
+          
+              </ScrollView>
+            </View>
+          </SafeAreaView>
           {/*end_testo*/}
 
           {/*bottone*/}
