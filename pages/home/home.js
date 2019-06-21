@@ -1,9 +1,16 @@
 import React from 'react';
-import { TouchableHighlight, Text, View, StyleSheet, Button, Image } from 'react-native';
+import { TouchableHighlight, Text, View, StyleSheet, Button, Image ,FlatList, List, ListItem} from 'react-native';
 import { styles } from '../../styles/styles';
+import json from '../../src/recipes/pasta_asciutta.json';
 
 
 class home extends React.Component {
+  constructor(props){
+    super(props);
+    var NIET= 'suus';
+    this.state = { data1: [{ key: 'muori'},{key:'DIo cane'}],
+                    data: json,  }; 
+  }
   static navigationOptions = {
     title: 'Home',
   };
@@ -13,13 +20,22 @@ class home extends React.Component {
   }
     render() {
       return (
-        <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-            <TouchableHighlight
-                style={styles.buttonStyle}
-                underlayColor='#008ae6'
-                onPress={this.onPressButton}>
-                <Text style={{color: 'white', fontWeight: 'bold'}}>Enter</Text>
-            </TouchableHighlight>
+        <View >
+
+            <FlatList
+            extraData={this.state}
+            //keyExtractor = {()=>{}}
+            data = {this.state.data.steps}
+            renderItem = {({item})=> 
+            <Text> {item} </Text> 
+            }
+            />
+            <FlatList
+  data={[{key: 'a'}, {key: 'b'}]}
+  renderItem={({item}) => <Text>{item.key}</Text>}
+/>
+    <Text>{this.state.data1[0].key}</Text>
+    <Button title = "suus"  onPress = {() => {this.onPressButton()}}/>
         </View>
         );
     }

@@ -1,15 +1,58 @@
 import React from 'react';
 import { Text, View, StyleSheet, Button, Image } from 'react-native';
-
+import pastaAsciutta from '../../src/recipes/pasta_asciutta.json';
+import bistecca from '../../src/recipes/bistecca.json';
 class recipeSteps extends React.Component {
+  constructor (props)
+  {
+    super(props);
+    this.state = {data : pastaAsciutta , cont : 0, ricetta : ""};
+  }
   static navigationOptions = {
     title: 'Ecco i passaggi da seguire...',
   };
   
+     _caricaRicetta = ()=> {
+      //this.setState({ this.state.ricetta : "bistecca"})
+      this.state.ricetta = 'pasta asciutta'
+      console.warn('caricamento ricetta ' + this.state.ricetta);
+    }
+    componentDidMount() {
+        this._caricaRicetta();
+        if (this.state.ricetta == bistecca.title)
+        this.setState({data : bistecca});
+        else if (this.state.ricetta == pastaAsciutta.title)
+        this.setState({data : pastaAsciutta})
+    }
     render() {
+     
       return (
         <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-          <Text>RICETTA</Text>
+          <Text>{this.state.data.steps[this.state.cont]}</Text>
+          <Button onPress = {()=>{
+             // this.setState(cont  cont + 1);
+             if(this.state.cont < 
+              this.state.data.steps.length - 1)
+             this.setState((state)=>
+             {return {cont : state.cont+1}});
+             console.warn(this.state.data.steps.length);
+             console.warn(this.state.cont)
+            }
+          }
+          title = 'Avanti' 
+          />
+                    <Button onPress = {()=>{
+             // this.setState(cont  cont + 1);
+             if(this.state.cont > 
+              0)
+             this.setState((state)=>
+             {return {cont : state.cont-1}});
+             console.warn(this.state.data.steps.length);
+             console.warn(this.state.cont)
+            }
+          }
+          title = 'Indietro' 
+          />
         </View>
       );
     }

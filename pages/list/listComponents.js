@@ -1,9 +1,15 @@
 import React from 'react';
-import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View } from 'react-native';
+import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View, FlatList, SectionList} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { styles } from '../../styles/styles';
+import json from '../../src/recipes/pasta_asciutta.json';
 
 class listComponents extends React.Component {
+  constructor(props)
+  {
+    super(props);
+    this.state ={ data : json};
+  }
   static navigationOptions = {
     title: 'Lista',
   };
@@ -16,23 +22,38 @@ class listComponents extends React.Component {
       return (
         //external
         <View style={{flex:1}}>
+  
           {/*testo*/}
-          <SafeAreaView style={{ flex: 6.7, backgroundColor: '#fff'}}>
             <View>
+          <SafeAreaView>
+              {/*<ScrollView>*/}
               <ScrollView>
-          
+              <FlatList
+                  data = {this.state.data.ingredients}
+                  extraData = {this.state}
+                  renderItem ={ ({item}) =>
+                     <Text> {item} </Text>
+                 
+                  }
+                  
+              >
+                </FlatList>
+       
                 <Text >
                   hello
                 </Text>
                 <Text>
                   ciao
                 </Text>
-          
-              </ScrollView>
+              
+                  </ScrollView>
+            {/* </ScrollView>*/}
+            </SafeAreaView>
             </View>
-          </SafeAreaView>
+ 
+          
           {/*end_testo*/}
-
+          
           {/*bottone*/}
           <View style={{flex:1}}>
             <View style={{position:'absolute',bottom:0,alignSelf:'center'}}>
