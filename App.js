@@ -3,15 +3,20 @@ import { createDrawerNavigator, createAppContainer, createStackNavigator } from 
 
 import HomeScreen from './ui/home/HomeScreen';
 import Settings from './ui/home/Settings';
-import RicetteScreen from './ui/ricette/RicetteScreen';
+import Catalogo from './ui/ricette/Catalogo';
 import ConcatUs from  './ui/home/contactUs';
+import Antipasti from  './ui/ricette/Antipasti';
+
 
 const MyStackNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen,
   },
-  Ricette: {
-    screen: RicetteScreen,
+  Catalogo: {
+    screen: Catalogo,
+  },
+  Antipasti: {
+    screen: Antipasti,
   },
 });
 

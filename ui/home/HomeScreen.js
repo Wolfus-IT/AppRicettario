@@ -28,7 +28,7 @@ class HomeScreen extends React.Component {
 
   onPressButton = () => {
    
-    this.props.navigation.navigate('Ricette')
+    this.props.navigation.navigate('Catalogo')
   };
 
     render() {
