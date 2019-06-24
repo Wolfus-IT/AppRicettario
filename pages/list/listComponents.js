@@ -3,15 +3,19 @@ import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View, FlatList, S
 import { ScrollView } from 'react-native-gesture-handler';
 import { styles } from '../../styles/styles';
 import json from '../../src/recipes/pasta_asciutta.json';
-
+import rice from '../../assets/recipes.json'
 class listComponents extends React.Component {
   constructor(props)
   {
     super(props);
-    this.state ={ data : json};
+    var rice = JSON.parse(this.props.navigation.getParam('recipe', 'Ricetta'))
+    this.state ={ data : json, data1:rice};
+    //console.warn(this.state.rice.title);
   }
-  static navigationOptions = {
-    title: 'Lista',
+  static navigationOptions = ({navigation}) => {
+    return{
+    title : navigation.getParam('titlee', 'A Nested Details Screen'),
+    }
   };
 
   onPressButton = () => {
@@ -29,23 +33,18 @@ class listComponents extends React.Component {
               {/*<ScrollView>*/}
               <ScrollView>
               <FlatList
-                  data = {this.state.data.ingredients}
+                  data = {this.state.data1.ingredients}
                   extraData = {this.state}
                   renderItem ={ ({item}) =>
-                     <Text> {item} </Text>
+                     <Text> {item.key} </Text>
                  
                   }
                   
               >
                 </FlatList>
        
-                <Text >
-                  hello
-                </Text>
-                <Text>
-                  ciao
-                </Text>
-              
+                
+               <Text> {this.state.data1.title} </Text>
                   </ScrollView>
             {/* </ScrollView>*/}
             </SafeAreaView>
@@ -53,14 +52,19 @@ class listComponents extends React.Component {
  
           
           {/*end_testo*/}
-          
+         
           {/*bottone*/}
           <View style={{flex:1}}>
             <View style={{position:'absolute',bottom:0,alignSelf:'center'}}>
               <TouchableHighlight
                   style={styles.buttonStyle}
                   underlayColor='#008ae6'
-                  onPress={this.onPressButton}>
+                  onPress={//this.onPressButton
+                   () => {
+                      this.props.navigation.navigate('Ricetta', {recipe : this.state.data1, title :this.state.data1.title});
+                        }
+                  }
+                  >
                 <Text style={{color: 'white', fontWeight: 'bold'}}>Start</Text>
               </TouchableHighlight>
             </View>

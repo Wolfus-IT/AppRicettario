@@ -6,10 +6,13 @@ class recipeSteps extends React.Component {
   constructor (props)
   {
     super(props);
-    this.state = {data : pastaAsciutta , cont : 0, ricetta : ""};
+    var value = this.props.navigation.getParam('recipe',{ricetta : "ricetta"});
+    this.state = {data : value, cont : 0, ricetta : ""};
   }
-  static navigationOptions = {
-    title: 'Ecco i passaggi da seguire...',
+  static navigationOptions = ({navigation}) => {
+    return{
+    title : navigation.getParam('title', 'A Nested Details Screen'),
+    }
   };
   
      _caricaRicetta = ()=> {
@@ -18,11 +21,12 @@ class recipeSteps extends React.Component {
       console.warn('caricamento ricetta ' + this.state.ricetta);
     }
     componentDidMount() {
-        this._caricaRicetta();
+       /* this._caricaRicetta();
         if (this.state.ricetta == bistecca.title)
         this.setState({data : bistecca});
         else if (this.state.ricetta == pastaAsciutta.title)
         this.setState({data : pastaAsciutta})
+        */
     }
     render() {
      
@@ -31,12 +35,11 @@ class recipeSteps extends React.Component {
           <Text>{this.state.data.steps[this.state.cont]}</Text>
           <Button onPress = {()=>{
              // this.setState(cont  cont + 1);
-             if(this.state.cont < 
-              this.state.data.steps.length - 1)
+             if(this.state.cont < this.state.data.steps.length - 1)
              this.setState((state)=>
              {return {cont : state.cont+1}});
-             console.warn(this.state.data.steps.length);
-             console.warn(this.state.cont)
+            // console.warn(this.state.data.steps.length);
+            /// console.warn(this.state.cont)
             }
           }
           title = 'Avanti' 
@@ -47,8 +50,8 @@ class recipeSteps extends React.Component {
               0)
              this.setState((state)=>
              {return {cont : state.cont-1}});
-             console.warn(this.state.data.steps.length);
-             console.warn(this.state.cont)
+             //console.warn(this.state.data.steps.length);
+             //console.warn(this.state.cont)
             }
           }
           title = 'Indietro' 
