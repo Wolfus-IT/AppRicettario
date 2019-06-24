@@ -3,7 +3,7 @@ import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View, FlatList, S
 import { ScrollView } from 'react-native-gesture-handler';
 import { styles } from '../../styles/styles';
 import json from '../../src/recipes/pasta_asciutta.json';
-import rice from '../../assets/recipes.json'
+//import rice from '../../recipes/recipes.json'
 class listComponents extends React.Component {
   constructor(props)
   {

@@ -8,6 +8,7 @@
     "eject": "C:\\Users\\Docebo_Guest3\\AppData\\Roaming\\npm\\expo eject"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.5.0",
     "expo": "^33.0.0",
     "prop-types": "^15.7.2",
     "react": "16.8.3",

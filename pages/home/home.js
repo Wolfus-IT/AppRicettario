@@ -2,8 +2,8 @@ import React from 'react';
 import { TouchableHighlight, Text, View, StyleSheet, Button, Image ,FlatList, List, ListItem} from 'react-native';
 import { styles } from '../../styles/styles';
 import json from '../../src/recipes/pasta_asciutta.json';
-import rice from '../../assets/recipes.json'
-import AsyncStorage from '@react-native-community/async-storage'
+import rice from '../../recipes/recipes.json'
+import {AsyncStorage} from 'react-native';
 class home extends React.Component {
   constructor(props){
     super(props);
@@ -29,8 +29,8 @@ class home extends React.Component {
         //if (this.state.data.recipes[i].type == 'Colazione' )
         {
         await AsyncStorage.setItem('@' + this.state.data.recipes[i].title,JSON.stringify(this.state.data.recipes[i]))
-        var value = await AsyncStorage.getItem ('@' + this.state.data.recipes[i].title)
-        console.warn (value);
+        //var value = await AsyncStorage.getItem ('@' + this.state.data.recipes[i].title)
+        //console.warn (value);
 
         } 
     /* var pastaAlForno = 
@@ -65,14 +65,14 @@ class home extends React.Component {
         <View >
             <FlatList   //renderizza tutte le ricette contenute in '/assets/recipes.json' e crea chiavi corrispondenti
             extraData={this.state}
-            keyExtractor = {(key)=>{return 'title'}}
+            keyExtractor = {(item)=> item.title}
             data = {this.state.data.recipes}
             renderItem = {({item})=> {
             if (item.type != null){    //item.type == TIPO DI RICETTA
            return( <Button  title=  {item.title} 
               onPress = {async() => {
                     var value = await AsyncStorage.getItem ('@' + item.title)
-        console.warn (value);
+                  console.warn (value);
         this.props.navigation.navigate('List', {recipe : value, titlee : JSON.parse(value).title} )
            }}/>) }
             }
