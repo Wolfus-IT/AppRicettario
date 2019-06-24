@@ -32,31 +32,39 @@ render(){
         style={{flex:1, height: undefined, width: undefined}}
         resizeMethod="auto">
           
-        <View style={{flex:1}}>
+        <View style={styles.ViewBotton}>
 
           <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton1}>
-            <Text style={styles.textStyle}>Antipasti</Text>
+            <View style={styles.ViewTesto}>
+              <Text style={styles.textStyle}>Antipasti</Text>
+            </View>
           </TouchableHighlight>
 
         </View>
-        <View style={{flex:1}}>
+        <View style={styles.ViewBotton}>
 
           <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton2}>
-            <Text style={styles.textStyle}>Primi</Text>
+            <View style={styles.ViewTesto}>
+              <Text style={styles.textStyle}>Primi</Text>
+            </View>
           </TouchableHighlight>
 
         </View>  
-        <View style={{flex:1}}>
+        <View style={styles.ViewBotton}>
 
           <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton3}>
-            <Text style={styles.textStyle}>Secondi</Text>
+            <View style={styles.ViewTesto}>
+              <Text style={styles.textStyle}>Secondi</Text>
+            </View>
           </TouchableHighlight>
 
         </View> 
-        <View style={{flex:1}}>
+        <View style={styles.ViewBotton}>
 
           <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton4}>
-            <Text style={styles.textStyle}>Dolci</Text>
+            <View style={styles.ViewTesto}>
+              <Text style={styles.textStyle}>Dolci</Text>
+            </View>
           </TouchableHighlight>
 
         </View> 
@@ -66,36 +74,29 @@ render(){
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  container2: {
-    flex: 0.2,
-    flexDirection:'row',
-    backgroundColor: '#fff',
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start',
-  },
+
   buttonStyle2:{
-    backgroundColor:'cornflowerblue',
+    backgroundColor:'#f77213',
     margin:10,
-    borderWidth:1,
+    //borderWidth:1,
     borderRadius:10,
     padding:30,
-    width: 300,
+    width: 200,
   },
   textStyle:{
     color:'white',
     fontSize: 25,
-    fontWeight:'bold'
+    fontWeight:'bold',
   },
-  titleStyle:{
-    flex:0.2,
+  ViewTesto:{
+    flex:1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
+  },
+  ViewBotton:{
+    flex:1,
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 });
 

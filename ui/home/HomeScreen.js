@@ -67,7 +67,7 @@ class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   bottonHome: {
     alignItems: 'center',
-    backgroundColor:'#00CDFF',
+    backgroundColor:'#f77213',
     justifyContent: 'center',
     borderRadius:15,
     paddingHorizontal:25,
