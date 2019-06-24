@@ -1,11 +1,11 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "C:\\Users\\Docebo_Guest1\\AppData\\Roaming\\npm\\expo start",
-    "android": "C:\\Users\\Docebo_Guest1\\AppData\\Roaming\\npm\\expo start --android",
-    "ios": "C:\\Users\\Docebo_Guest1\\AppData\\Roaming\\npm\\expo start --ios",
-    "web": "C:\\Users\\Docebo_Guest1\\AppData\\Roaming\\npm\\expo start --web",
-    "eject": "C:\\Users\\Docebo_Guest1\\AppData\\Roaming\\npm\\expo eject"
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
   },
   "dependencies": {
     "expo": "^33.0.0",

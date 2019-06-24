@@ -1,0 +1,16 @@
+{
+    "title" : "pasta asciutta",
+    "type" : "pranzo",
+    "ingredients" :
+    [
+       "pasta","sugo"
+    ],
+   
+    "steps" :
+    [
+        "Far ebollire l'acqua ",
+                 "Buttare la pasta ",
+         "Cucinarla ",
+         "Aggiungere il sugo"      
+    ]   
+}

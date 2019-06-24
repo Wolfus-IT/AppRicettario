@@ -5,10 +5,12 @@ import HomeScreen from './pages/home/HomeScreen';
 import Settings from './pages/home/Settings';
 import Catalogo from './pages/ricette/Catalogo';
 import ConcatUs from  './pages/home/contactUs';
-import Antipasti from  './pages/ricette/Antipasti';
-import Primi from  './pages/ricette/Primi';
-import Secondi from  './pages/ricette/Secondi';
-import Dolci from  './pages/ricette/Dolci';
+
+import listComponents from './pages/ricette/list/listComponents'
+import recipeSteps from './pages/ricette/steps/recipeSteps'
+import home from './pages/ricette/home/home'
+
+
 const MyStackNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen,
@@ -16,17 +18,14 @@ const MyStackNavigator = createStackNavigator({
   Catalogo: {
     screen: Catalogo,
   },
-  Antipasti: {
-    screen: Antipasti,
+  Home: {
+    screen: home,
   },
-  Primi: {
-    screen: Primi,
+  List: {
+    screen: listComponents,
   },
-  Secondi: {
-    screen: Secondi,
-  },
-  Dolci: {
-    screen: Dolci,
+  Ricetta: {
+    screen: recipeSteps,
   },
 });
 
