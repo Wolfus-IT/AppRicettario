@@ -1,19 +1,26 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { createDrawerNavigator, createAppContainer, createStackNavigator } from 'react-navigation';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
+import HomeScreen from './ui/home/HomeScreen';
+import Settings from './ui/home/Settings';
+import RicetteScreen from './ui/ricette/RicetteScreen';
+import ConcatUs from  './ui/home/contactUs';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const MyStackNavigator = createStackNavigator({
+  Home: {
+    screen: HomeScreen,
+  },
+  Ricette: {
+    screen: RicetteScreen,
   },
 });
+
+
+
+const MyDrawerNavigator = createDrawerNavigator({
+  Home: MyStackNavigator,
+  ConcatUs: { screen: ConcatUs },
+  Settings: { screen: Settings }
+})
+
+export default createAppContainer(MyDrawerNavigator);
