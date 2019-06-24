@@ -1,14 +1,14 @@
 import React from 'react';
 import { createDrawerNavigator, createAppContainer, createStackNavigator } from 'react-navigation';
 
-import HomeScreen from './ui/home/HomeScreen';
-import Settings from './ui/home/Settings';
-import Catalogo from './ui/ricette/Catalogo';
-import ConcatUs from  './ui/home/contactUs';
-import Antipasti from  './ui/ricette/Antipasti';
-import Primi from  './ui/ricette/Primi';
-import Secondi from  './ui/ricette/Secondi';
-import Dolci from  './ui/ricette/Dolci';
+import HomeScreen from './pages/home/HomeScreen';
+import Settings from './pages/home/Settings';
+import Catalogo from './pages/ricette/Catalogo';
+import ConcatUs from  './pages/home/contactUs';
+import Antipasti from  './pages/ricette/Antipasti';
+import Primi from  './pages/ricette/Primi';
+import Secondi from  './pages/ricette/Secondi';
+import Dolci from  './pages/ricette/Dolci';
 const MyStackNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen,
