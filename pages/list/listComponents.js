@@ -3,7 +3,7 @@ import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View, FlatList, S
 import { ScrollView } from 'react-native-gesture-handler';
 import { styles } from '../../styles/styles';
 import json from '../../src/recipes/pasta_asciutta.json';
-//import rice from '../../recipes/recipes.json'
+
 class listComponents extends React.Component {
   constructor(props)
   {
@@ -12,6 +12,7 @@ class listComponents extends React.Component {
     this.state ={ data : json, data1:rice};
     //console.warn(this.state.rice.title);
   }
+
   static navigationOptions = ({navigation}) => {
     return{
     title : navigation.getParam('titlee', 'A Nested Details Screen'),
@@ -22,58 +23,48 @@ class listComponents extends React.Component {
     this.props.navigation.navigate('Ricetta')
   }
   
-    render() {
-      return (
-        //external
-        <View style={{flex:1}}>
-  
-          {/*testo*/}
-            <View>
+  render() {
+    return (
+      //external
+      <View style={{flex:1}}>
+
+        {/*lista*/}
+        <View>
           <SafeAreaView>
-              {/*<ScrollView>*/}
-              <ScrollView>
+            <ScrollView>
               <FlatList
-                  data = {this.state.data1.ingredients}
-                  extraData = {this.state}
-                  renderItem ={ ({item}) =>
-                     <Text> {item.key} </Text>
-                 
-                  }
-                  
+                data = {this.state.data1.ingredients}
+                extraData = {this.state}
+                renderItem ={ ({item}) =>
+                <Text>{item.key}</Text>
+                }    
               >
-                </FlatList>
-       
-                
-               <Text> {this.state.data1.title} </Text>
-                  </ScrollView>
-            {/* </ScrollView>*/}
-            </SafeAreaView>
-            </View>
- 
-          
-          {/*end_testo*/}
-         
-          {/*bottone*/}
-          <View style={{flex:1}}>
-            <View style={{position:'absolute',bottom:0,alignSelf:'center'}}>
-              <TouchableHighlight
-                  style={styles.buttonStyle}
-                  underlayColor='#008ae6'
-                  onPress={//this.onPressButton
-                   () => {
-                      this.props.navigation.navigate('Ricetta', {recipe : this.state.data1, title :this.state.data1.title});
-                        }
-                  }
-                  >
-                <Text style={{color: 'white', fontWeight: 'bold'}}>Start</Text>
-              </TouchableHighlight>
-            </View>
-          </View>
-          {/*end_bottone*/}
+              </FlatList>  
+              <Text> {this.state.data1.title} </Text>
+            </ScrollView>
+          </SafeAreaView>
         </View>
-        //end_external
-      );
-    }
+        {/*end_lista*/}
+          
+        {/*bottone*/}
+        <View style={{flex:1}}>
+          <View style={{position:'absolute',bottom:0,alignSelf:'center'}}>
+            <TouchableHighlight
+              style={styles.buttonStyle}
+              underlayColor='#008ae6'
+              onPress={() => {
+                      this.props.navigation.navigate('Ricetta', {recipe : this.state.data1, title :this.state.data1.title});
+                      }
+              }>
+              <Text style={{color: 'white', fontWeight: 'bold'}}>Start</Text>
+            </TouchableHighlight>
+          </View>
+        </View>
+        {/*end_bottone*/}
+      </View>
+      //end_external
+    );
+  }
 }
 
 export default listComponents;
