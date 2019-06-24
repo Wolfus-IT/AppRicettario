@@ -6,8 +6,9 @@ import Settings from './ui/home/Settings';
 import Catalogo from './ui/ricette/Catalogo';
 import ConcatUs from  './ui/home/contactUs';
 import Antipasti from  './ui/ricette/Antipasti';
-
-
+import Primi from  './ui/ricette/Primi';
+import Secondi from  './ui/ricette/Secondi';
+import Dolci from  './ui/ricette/Dolci';
 const MyStackNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen,
@@ -17,6 +18,15 @@ const MyStackNavigator = createStackNavigator({
   },
   Antipasti: {
     screen: Antipasti,
+  },
+  Primi: {
+    screen: Primi,
+  },
+  Secondi: {
+    screen: Secondi,
+  },
+  Dolci: {
+    screen: Dolci,
   },
 });
 

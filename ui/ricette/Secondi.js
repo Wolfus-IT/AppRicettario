@@ -3,7 +3,7 @@ import {AppRegistry,StyleSheet,TouchableHighlight,Text,View, SafeAreaView, FlatL
 
 class Antipasti extends React.Component {
   static navigationOptions = {
-    title: 'Antipasti',
+    title: 'Secondi',
   };
 
   onPressButton = () => {
@@ -29,7 +29,7 @@ render(){
     const data = [{title: 'Antipasti'},{title: 'Primi'}, {title: 'Secondi'}, {title: 'Dolci'},{title: 'test ciao'}, {title: ' ciao'}, {title: ' ciao'}]
 
     return (
-      <ImageBackground source={require('../../image/Antipasti.jpg')}
+      <ImageBackground source={require('../../image/catalogoIB.jpg')}
         style={{flex:1, height: undefined, width: undefined}}
         resizeMethod="auto">
           

@@ -3,38 +3,63 @@ import {AppRegistry,StyleSheet,TouchableHighlight,Text,View, SafeAreaView, FlatL
 
 class RicetteScreen extends React.Component {
   static navigationOptions = {
-    title: 'Ricette',
+    title: 'Catalogo',
   };
 
-  onPressButton = () => {
+   onPressButton1 = () => {
    
     this.props.navigation.navigate('Antipasti')
   };
+  onPressButton2 = () => {
+   
+    this.props.navigation.navigate('Primi')
+  };
+  onPressButton3 = () => {
+   
+    this.props.navigation.navigate('Secondi')
+  };
+  onPressButton4 = () => {
+   
+    this.props.navigation.navigate('Dolci')
+  };
   
-  renderItem = (data) => {
-    const {item}  = data;
-    return (  
-
-        <View style={{flex:1}}>
-
-        <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton}>
-          <Text style={styles.textStyle}>{item.title}</Text>
-        </TouchableHighlight>
-
-      </View> 
-      )
-}
-
+  
 render(){
-    const data = [{title: 'Antipasti'},{title: 'Primi'}, {title: 'Secondi'}, {title: 'Dolci'},{title: 'test ciao'}, {title: ' ciao'}, {title: ' ciao'}]
+    
 
     return (
       <ImageBackground source={require('../../image/catalogoIB.jpg')}
         style={{flex:1, height: undefined, width: undefined}}
         resizeMethod="auto">
           
-        <FlatList data={data} renderItem={this.renderItem} />
+        <View style={{flex:1}}>
 
+          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton1}>
+            <Text style={styles.textStyle}>Antipasti</Text>
+          </TouchableHighlight>
+
+        </View>
+        <View style={{flex:1}}>
+
+          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton2}>
+            <Text style={styles.textStyle}>Primi</Text>
+          </TouchableHighlight>
+
+        </View>  
+        <View style={{flex:1}}>
+
+          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton3}>
+            <Text style={styles.textStyle}>Secondi</Text>
+          </TouchableHighlight>
+
+        </View> 
+        <View style={{flex:1}}>
+
+          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton4}>
+            <Text style={styles.textStyle}>Dolci</Text>
+          </TouchableHighlight>
+
+        </View> 
       </ImageBackground>
       )
     }
