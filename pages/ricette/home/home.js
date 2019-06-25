@@ -2,13 +2,19 @@ import React from 'react';
 import { TouchableHighlight, Text, View, StyleSheet, Button, Image ,FlatList, List, ListItem} from 'react-native';
 //import { styles } from '../../styles/styles';
 //import json from '../../src/recipes/pasta_asciutta.json';
-import rice from '../../recipes/recipes.json'
+import rice from '../../../recipes/recipes.json'
 import {AsyncStorage} from 'react-native';
 
 class home extends React.Component {
-  
+  constructor(props){
+    super(props);
+    var NIET= 'suus';
+    this.state = { data1: [{ key: 'muori'},{key:'DIo cane'}],
+                    data: rice,  }; 
+  }
+
   static navigationOptions = {
-    title: 'Home',
+    title: 'Homee',
   };
   
   onPressButton = () => {
@@ -16,7 +22,7 @@ class home extends React.Component {
   }
   
   async  componentDidMount (){
-  //onsole.warn('suus');
+  //console.warn('suus');
     for ( var i = 0; i <  this.state.data.recipes.length; i++)
     //console.warn(this.state.data.recipes[i].title);
     //if (this.state.data.recipes[i].type == 'Colazione' )
@@ -62,7 +68,7 @@ class home extends React.Component {
           keyExtractor = {(item)=> item.title}
           data = {this.state.data.recipes}
           renderItem = {({item})=> {
-          if (item.type != null){    //item.type == TIPO DI RICETTA
+          if (item.type == Primi){    //item.type == TIPO DI RICETTA
             return( 
               <Button  
                 title=  {item.title} 

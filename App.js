@@ -8,7 +8,7 @@ import ConcatUs from  './pages/home/contactUs';
 
 import listComponents from './pages/ricette/list/listComponents';
 import recipeSteps from './pages/ricette/steps/recipeSteps';
-import home from './pages/ricette/home/home.js';
+import home from './pages/ricette/home/home';
 
 
 const MyStackNavigator = createStackNavigator({
@@ -18,7 +18,7 @@ const MyStackNavigator = createStackNavigator({
   Catalogo: {
     screen: Catalogo,
   },
-  Home: {
+  Homee: {
     screen: home,
   },
   List: {
