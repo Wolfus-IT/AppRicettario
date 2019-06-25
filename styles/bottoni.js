@@ -9,11 +9,11 @@ const styles = StyleSheet.create({
   },
 
   buttonStyle: {
-    paddingLeft: 70,
-    paddingRight: 70,
-    paddingTop: 20,
-    paddingBottom: 20,
-    borderRadius: 15,
+    
+    paddingTop: 15,
+    paddingBottom: 15,
+    borderRadius: 17,
+    borderColor: '#ff8100',
     backgroundColor: '#ff8100',
     alignItems: 'center',
   },
