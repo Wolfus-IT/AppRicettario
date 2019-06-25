@@ -96,7 +96,46 @@
                 "Aromatizzate il condimento con l’erba cipollina tagliata a piccole rondelle, aggiungete anche i piselli e il riso che si saranno intanto raffreddati.",
                 "Per finire incorporate i filetti di tonno sbriciolati. e il prosciutto cotto, aggiustate di sale e mescolate con un cucchiaio. Coprite la ciotola con la pellicola e lasciatela in frigorifero fino al momento di servirla così sarà ben fredda e i sapori si saranno amalgamati."
 			]
-		},
+        },
+        {
+            "title" :"Polpette al sugo",
+            "type" : "Secondi",
+            "ingredients" : [{
+                "key" : "Manzo (carne macinata) 220 g"
+            },
+            {
+                "key" : "Salsiccia 165 g"
+            },
+            {
+                "key" : "Pane raffermo mollica 30 g"
+            },
+            {
+                "key" : "Parmigiano reggiano grattugiato 25 g"
+            },
+            {
+                "key" : "1 uovo"
+            },
+            {
+                "key" : "Prezzemolo tritato 1 cucchiaio"
+            },
+            {
+                "key" : ""
+            },
+            {
+                "key" : ""
+            },
+            {
+                "key" : ""
+            },
+            {
+                "key" : ""
+            }
+            ],
+            "steps" : [
+                "polpa"
+            ]
+        },
+        
 		{
 			"title": "Pizza",
 			"type": "Secondi",
