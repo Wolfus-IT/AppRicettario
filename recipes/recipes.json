@@ -1,61 +1,89 @@
 {
-    "recipes":[
-        {
-            "title":"Latte con i biscotti", "type":"Dolci",
-            "ingredients" : 
-            [
-                {"key" : "latte"},
-                {"key" : "biscotti"}
-            ],
-            "steps" :
-            [
-                "Prendi il latte",
-                "Metti i biscotti"
+	"recipes": [{
+			"title": "Latte con i biscotti",
+			"type": "Dolci",
+			"ingredients": [{
+					"key": "latte"
+				},
+				{
+					"key": "biscotti"
+				}
+			],
+			"steps": [
+				"Prendi il latte",
+				"Metti i biscotti"
+			]
+		},
+		{
+			"title": "Spaghetti alla carbonara",
+			"type": "Primi",
+			"ingredients": [{
+					"key": "Spaghetti 320 g"
+				},
+				{
+					"key": " 6 tuorli d'uovo"
+				},
+				{
+					"key": "Pancetta"
+				},
+				{
+					"key": "Guanciale 150 g"
+				},
+				{
+					"key": "Pecorino romano 50 g "
+				},
+				{
+					"key": "Sale fino qb"
+				}, 
+				{
+					"key": "Pepe nero qb"
+				}
+
+			],
+			"steps": [
+				"Per preparare gli spaghetti alla carbonara cominciate mettendo sul fuoco una pentola con l’acqua salata per cuocere la pasta. Nel frattempo eliminate la cotenna dal guanciale e tagliatelo prima a fette e poi a striscioline spesse circa 1cm. La cotenna avanzata potrà essere riutilizzata per insaporire altre preparazioni. Versate i pezzetti in una padella antiaderente e rosolate per circa 15 minuti a fiamma media, fate attenzione a non bruciarlo altrimenti rilascerà un aroma troppo forte.",
+				"Nel frattempo tuffate gli spaghetti nell’acqua bollente e cuoceteli per il tempo indicato sulla confezione. Intanto versate i tuorli in una ciotola, aggiungete anche la maggior parte del pecorino previsto dalla ricetta la parte restante servirà per guarnire la pasta.",
+                "Insaporite con il pepe nero, amalgamate tutto con una frusta a mano. Aggiungete un cucchiaio di acqua di cottura per diluire il composto e mescolate.",
+                "Intanto il guanciale sarà giunto a cottura, spegnete il fuoco e tenetelo da parte. Scolate la pasta al dente direttamente nel tegame con il guanciale e saltatela brevemente per insaporirla. Togliete dal fuoco e versate il composto di uova e pecorino nel tegame, saltate la pasta per amalgamare      e se dovesse risultare troppo asciutta potete aggiungere poca acqua di cottura. Servite subito gli spaghetti alla carbonara insaporendoli con il pecorino avanzato e il pepe nero macinato."
             ]
-        }, 
-        {
-            "title":"Carbonara", "type":"Primi",
-            "ingredients":
-            [
-                {"key" : "Pasta"},
-                {"key" : "Uova"},
-                {"key" : "Pancetta"}
-            ],
-            "steps" :
-            [
-                "Prendi la pasta",
-                "Ebollila"
-            ]
-        }, 
-        {
-            "title":"Pizza", "type":"Secondi",
-            "ingredients":
-            [
-                {"key" : "Impasto"},
-                {"key" : "Pomodoro"},
-                {"key" : "Mozzarella"}
-            ],
-            "steps" :
-            [
-                "Stendi l'impasto",
-                "Metti il pomodoro e la mozzarella",
-                "Cucina"
-            ]
-        },
-        {
-            "title":"Forse qualche pizza", "type":"Antipasti",
-            "ingredients":
-            [
-                {"key" : "Impasto"},
-                {"key" : "Pomodoro"},
-                {"key" : "Mozzarella"}
-            ],
-            "steps" :
-            [
-                "Stendi l'impasto",
-                "Metti il pomodoro e la mozzarella",
-                "Cucina"
-            ]
-        }
-    ]
+		},
+		{
+			"title": "Pizza",
+			"type": "Secondi",
+			"ingredients": [{
+					"key": "Impasto"
+				},
+				{
+					"key": "Pomodoro"
+				},
+				{
+					"key": "Mozzarella"
+				}
+			],
+			"steps": [
+				"Stendi l'impasto",
+				"Metti il pomodoro e la mozzarella",
+				"Cucina"
+			]
+		},
+		{
+			"title": "Forse qualche pizza",
+			"type": "Antipasti",
+			"ingredients": [{
+					"key": "Impasto"
+				},
+				{
+					"key": "Pomodoro"
+				},
+				{
+					"key": "Mozzarella"
+				}
+			],
+			"steps": [
+				"Stendi l'impasto",
+				"Metti il pomodoro e la mozzarella",
+				"Cucina"
+			]
+		}
+	]
 }
