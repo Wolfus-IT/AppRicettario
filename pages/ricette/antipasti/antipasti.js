@@ -15,6 +15,11 @@ class home extends React.Component {
 
   static navigationOptions = {
     title: 'Antipasti',
+   
+    headerRight: (
+      <Image
+        source={require('../../../image/iconaLogo.png')} style={{width: 70, height: 40,right:5}}/>
+    ),
   };
   
   onPressButton = () => {

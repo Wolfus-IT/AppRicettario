@@ -1,9 +1,16 @@
 import React, {Component} from 'react';
-import {AppRegistry,StyleSheet,TouchableHighlight,Text,View, SafeAreaView, FlatList ,ImageBackground} from 'react-native';
+import {AppRegistry,StyleSheet,TouchableHighlight,Text,View, SafeAreaView, FlatList ,ImageBackground,Image} from 'react-native';
 
 class RicetteScreen extends React.Component {
   static navigationOptions = {
     title: 'Catalogo',
+    
+    headerRight: (
+      
+      <Image
+        source={require('../../image/iconaLogo.png')} style={{width: 70, height: 40,right:5}}/>
+    
+    ),
   };
 
    onPressButton1 = () => {

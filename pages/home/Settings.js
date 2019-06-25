@@ -1,35 +1,55 @@
 import React from 'react';
-import { Text, View, StyleSheet, Button, Image } from 'react-native';
+import { Text, View, StyleSheet, Button, Image,ImageBackground} from 'react-native';
 
 class Settings extends React.Component {
+  
   static navigationOptions = {
     title: 'Settings',
   };
   
     render() {
-      return (
-      
-        <View  style={styles.text}>
-       
-          <Text>Addres</Text>
-          <Text>Phone</Text>
-          <Text>E-mail</Text>
-          <Text>Website</Text>
+      return (  
 
+
+        <ImageBackground source={require('../../image/impostazion.jpg')}
+        style={{flex:1, height: undefined, width: undefined,resizeMode: 'contain'}} >
+      <View style={styles.container}>
+        
+        
+        <View style={styles.title}>
+         <Text style={styles.title}>{'\n'}Settings</Text>   
+         <Image
+        source={require('../../image/iconaLogo.png')} style={{ position:'absolute',top:20,width: 200, height: 120}}/>
         </View>
+        
+        <View style={styles.body}>
+          <Text> Assistenza:    per problemi contattare '''''''''''</Text>
+          <Text>Infrmazioni:    app sviluppata da .... con React Native</Text>
+          
+        </View>
+
+      </View>
+      </ImageBackground >
       );
     }
   }
 
   const styles = StyleSheet.create({
-    title: {
-     alignItems:'center',
-     fontSize: 30,
+    container: {
+      flex: 1,
+      flexDirection: 'column'
+        
     },
-    text:{
-         flex:0.5,
+    title: {
+      flex: 1,
+      alignItems:'center',
+      fontSize: 30,
+    },
+    body:{
+        flex:5,
         flexDirection: 'column',
-        justifyContent: 'space-between',
+        justifyContent: 'space-evenly',
+        
     }
   });
   export default Settings;
