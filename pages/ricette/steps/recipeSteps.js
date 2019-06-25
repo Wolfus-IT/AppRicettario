@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, StyleSheet, Button, Image } from 'react-native';
-import json from '../../src/recipes/pasta_asciutta.json';
-import json from '../../src/recipes/bistecca.json';
+//import json from '../../src/recipes/pasta_asciutta.json';
+//import json from '../../src/recipes/bistecca.json';
 
 class recipeSteps extends React.Component {
   constructor (props)

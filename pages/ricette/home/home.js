@@ -1,17 +1,12 @@
 import React from 'react';
 import { TouchableHighlight, Text, View, StyleSheet, Button, Image ,FlatList, List, ListItem} from 'react-native';
-import { styles } from '../../styles/styles';
-import json from '../../src/recipes/pasta_asciutta.json';
+//import { styles } from '../../styles/styles';
+//import json from '../../src/recipes/pasta_asciutta.json';
 import rice from '../../recipes/recipes.json'
 import {AsyncStorage} from 'react-native';
 
 class home extends React.Component {
-  constructor(props){
-    super(props);
-    var NIET= 'suus';
-    this.state = { data1: [{ key: 'muori'},{key:'DIo cane'}],
-                    data: rice,  }; 
-  }
+  
   static navigationOptions = {
     title: 'Home',
   };

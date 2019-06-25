@@ -6,9 +6,9 @@ import Settings from './pages/home/Settings';
 import Catalogo from './pages/ricette/Catalogo';
 import ConcatUs from  './pages/home/contactUs';
 
-import listComponents from './pages/ricette/list/listComponents'
-import recipeSteps from './pages/ricette/steps/recipeSteps'
-import home from './pages/ricette/home/home'
+import listComponents from './pages/ricette/list/listComponents';
+import recipeSteps from './pages/ricette/steps/recipeSteps';
+import home from './pages/ricette/home/home.js';
 
 
 const MyStackNavigator = createStackNavigator({

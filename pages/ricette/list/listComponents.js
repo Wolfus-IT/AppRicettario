@@ -1,8 +1,8 @@
 import React from 'react';
-import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View, FlatList, SectionList} from 'react-native';
+import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View, FlatList} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import { styles } from '../../styles/styles';
-import json from '../../src/recipes/pasta_asciutta.json';
+import { styles } from '../../../styles/styles.js';
+import json from '../../../src/recipes/pasta_asciutta.json';
 
 class listComponents extends React.Component {
   constructor(props)
@@ -34,6 +34,7 @@ class listComponents extends React.Component {
             <ScrollView>
               <FlatList
                 data = {this.state.data1.ingredients}
+                style={this.container}
                 extraData = {this.state}
                 renderItem ={ ({item}) =>
                 <Text>{item.key}</Text>
