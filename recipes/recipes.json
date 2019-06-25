@@ -34,7 +34,7 @@
 				},
 				{
 					"key": "Sale fino qb"
-				}, 
+				},
 				{
 					"key": "Pepe nero qb"
 				}
@@ -43,9 +43,59 @@
 			"steps": [
 				"Per preparare gli spaghetti alla carbonara cominciate mettendo sul fuoco una pentola con l’acqua salata per cuocere la pasta. Nel frattempo eliminate la cotenna dal guanciale e tagliatelo prima a fette e poi a striscioline spesse circa 1cm. La cotenna avanzata potrà essere riutilizzata per insaporire altre preparazioni. Versate i pezzetti in una padella antiaderente e rosolate per circa 15 minuti a fiamma media, fate attenzione a non bruciarlo altrimenti rilascerà un aroma troppo forte.",
 				"Nel frattempo tuffate gli spaghetti nell’acqua bollente e cuoceteli per il tempo indicato sulla confezione. Intanto versate i tuorli in una ciotola, aggiungete anche la maggior parte del pecorino previsto dalla ricetta la parte restante servirà per guarnire la pasta.",
-                "Insaporite con il pepe nero, amalgamate tutto con una frusta a mano. Aggiungete un cucchiaio di acqua di cottura per diluire il composto e mescolate.",
-                "Intanto il guanciale sarà giunto a cottura, spegnete il fuoco e tenetelo da parte. Scolate la pasta al dente direttamente nel tegame con il guanciale e saltatela brevemente per insaporirla. Togliete dal fuoco e versate il composto di uova e pecorino nel tegame, saltate la pasta per amalgamare      e se dovesse risultare troppo asciutta potete aggiungere poca acqua di cottura. Servite subito gli spaghetti alla carbonara insaporendoli con il pecorino avanzato e il pepe nero macinato."
-            ]
+				"Insaporite con il pepe nero, amalgamate tutto con una frusta a mano. Aggiungete un cucchiaio di acqua di cottura per diluire il composto e mescolate.",
+				"Intanto il guanciale sarà giunto a cottura, spegnete il fuoco e tenetelo da parte. Scolate la pasta al dente direttamente nel tegame con il guanciale e saltatela brevemente per insaporirla. Togliete dal fuoco e versate il composto di uova e pecorino nel tegame, saltate la pasta per amalgamare      e se dovesse risultare troppo asciutta potete aggiungere poca acqua di cottura. Servite subito gli spaghetti alla carbonara insaporendoli con il pecorino avanzato e il pepe nero macinato."
+			]
+		},
+		{
+			"title": "Insalata di riso",
+			"type": "Primi",
+			"ingredients": [{
+					"key": "Riso arborio 300 g"
+				},
+				{
+					"key": "Tonno sott'olio 200 g"
+				},
+				{
+					"key": "Pomodori ramati 150 g"
+				},
+				{
+					"key": "Caciocavallo 150 g"
+				},
+				{
+					"key": "Prosciutto cotto a cubetti 100 g"
+				},
+				{
+					"key": "Pisallini 80 g"
+				},
+				{
+					"key": "Peperoni rossi 75 g"
+				},
+				{
+					"key": "Peperoni gialli 75 g"
+				},
+				{
+					"key": "Olive nere snocciolate 80 g"
+                },
+                {
+					"key": "Cetriolini sottaceto 80 g"
+                },
+                {
+					"key": "Erba cipollina q.b."
+                },
+                {
+					"key": "Sale fino q.b."
+				}
+			],
+			"steps": [
+                "Per realizzare l’insalata di riso classica ponete sul fuoco una pentola colma di acqua salata e una volta che avrà raggiunto il bollore versate i piselli e sbollentateli per circa 3 minuti. Una volta trascorso questo tempo, scolate i piselli e nella stessa acqua versate il riso. Cuocete il riso 2-3 minuti in meno rispetto ai tempi di cottura indicati sulla confezione.",
+                "Nel frattempo occupatevi del condimento: lavate i peperoni, eliminate il picciolo, i semi e i filamenti interni, tagliateli prima a listarelle e poi a cubetti (5-6) e poneteli in una ciotola capiente dove raccoglierete tutti gli altri ingredienti.",
+                "Lavate e tagliate a metà anche i pomodori, scavate la polpa con un cucchiaino e tagliateli a cubetti.",
+                "Tagliate a cubetti il prosciutto cotto. Ricavate dei cubetti anche dal caciocavallo e tagliate a rondelle i cetriolini sottaceto e le olive denocciolate.",
+                "Quando mancheranno circa 2-3 minuti dalla cottura, scolate il riso e lasciatelo raffreddare distribuendolo su un vassoio ben freddo (precedentemente conservato in frigorifero) così da agevolare il raffreddamento del riso.",
+                "Aromatizzate il condimento con l’erba cipollina tagliata a piccole rondelle, aggiungete anche i piselli e il riso che si saranno intanto raffreddati.",
+                "Per finire incorporate i filetti di tonno sbriciolati. e il prosciutto cotto, aggiustate di sale e mescolate con un cucchiaio. Coprite la ciotola con la pellicola e lasciatela in frigorifero fino al momento di servirla così sarà ben fredda e i sapori si saranno amalgamati."
+			]
 		},
 		{
 			"title": "Pizza",
