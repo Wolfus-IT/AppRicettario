@@ -13,11 +13,7 @@ class HomeScreen extends React.Component {
     const onPress =  () => navigation.openDrawer();
     return  {
       title:'                Home',
-     
-      
-      
-
-    
+ 
       headerLeft: (
         <TouchableOpacity onPress={onPress} > 
         <Image
@@ -82,7 +78,7 @@ const styles = StyleSheet.create({
     color:'white',
   },
   textHome:{
-    flex:0.05,
+    flex:0.07,
     alignItems: 'center',
     color:'white',
   },

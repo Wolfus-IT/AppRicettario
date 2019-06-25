@@ -6,7 +6,7 @@ import { createDrawerNavigator, createAppContainer, createStackNavigator } from 
 import HomeScreen from './pages/home/HomeScreen';
 import Settings from './pages/home/Settings';
 import Catalogo from './pages/ricette/Catalogo';
-import ConcatUs from  './pages/home/contactUs';
+import ContactUs from  './pages/home/contactUs';
 
 //lista e steps
 import listComponents from './pages/ricette/list/listComponents';
@@ -25,6 +25,9 @@ const MyStackNavigator = createStackNavigator({
   },
   Catalogo: {
     screen: Catalogo,
+  },
+  ContactUs: {
+    screen: ContactUs,
   },
   //componenti del catalogo
   Antipasti: {
@@ -54,7 +57,7 @@ const MyDrawerNavigator = createDrawerNavigator({
   Home: MyStackNavigator,
  
   Settings:{ screen: Settings },
-  ContacttUs: { screen: ContacttUs },
+  ContactUs: { screen: ContactUs },
 })
 
 export default createAppContainer(MyDrawerNavigator);

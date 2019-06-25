@@ -12,13 +12,14 @@ class Settings extends React.Component {
 
 
         <ImageBackground source={require('../../image/impostazion.jpg')}
-        style={{flex:1, height: undefined, width: undefined,resizeMode: 'contain'}}
-        >
+        style={{flex:1, height: undefined, width: undefined,resizeMode: 'contain'}} >
       <View style={styles.container}>
         
         
         <View style={styles.title}>
          <Text style={styles.title}>{'\n'}Settings</Text>   
+         <Image
+        source={require('../../image/iconaLogo.png')} style={{ position:'absolute',top:20,width: 200, height: 120}}/>
         </View>
         
         <View style={styles.body}>
