@@ -12,7 +12,7 @@ class RicetteScreen extends React.Component {
   };
   onPressButton2 = () => {
    
-    this.props.navigation.navigate('Homee')
+    this.props.navigation.navigate('Primi')
   };
   onPressButton3 = () => {
    

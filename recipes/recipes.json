@@ -1,7 +1,7 @@
 {
     "recipes":[
         {
-            "title":"Latte con i biscotti", "type":"Colazione",
+            "title":"Latte con i biscotti", "type":"Dolci",
             "ingredients" : 
             [
                 {"key" : "latte"},
@@ -14,7 +14,7 @@
             ]
         }, 
         {
-            "title":"Carbonara", "type":"Pranzo",
+            "title":"Carbonara", "type":"Primi",
             "ingredients":
             [
                 {"key" : "Pasta"},
@@ -28,7 +28,22 @@
             ]
         }, 
         {
-            "title":"Pizza", "type":"Cena",
+            "title":"Pizza", "type":"Secondi",
+            "ingredients":
+            [
+                {"key" : "Impasto"},
+                {"key" : "Pomodoro"},
+                {"key" : "Mozzarella"}
+            ],
+            "steps" :
+            [
+                "Stendi l'impasto",
+                "Metti il pomodoro e la mozzarella",
+                "Cucina"
+            ]
+        },
+        {
+            "title":"Forse qualche pizza", "type":"Antipasti",
             "ingredients":
             [
                 {"key" : "Impasto"},
