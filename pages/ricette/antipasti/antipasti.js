@@ -1,8 +1,8 @@
 import React from 'react';
-import { TouchableHighlight, Text, View, StyleSheet, Button, Image ,FlatList, List, ListItem} from 'react-native';
-//import { styles } from '../../styles/styles';
+import { TouchableHighlight, Text, View, SafeAreaView, ScrollView ,FlatList, } from 'react-native';
+import { styles } from '../../../styles/bottoni';
 //import json from '../../src/recipes/pasta_asciutta.json';
-import rice from '../../../recipes/recipes.json'
+import rice from '../../../recipes/recipes.json';
 import {AsyncStorage} from 'react-native';
 
 class home extends React.Component {
@@ -63,24 +63,33 @@ class home extends React.Component {
   render() {
     return (
       <View>
-        <FlatList   //renderizza tutte le ricette contenute in '/assets/recipes.json' e crea chiavi corrispondenti
-          extraData={this.state}
-          keyExtractor = {(item)=> item.title}
-          data = {this.state.data.recipes}
-          renderItem = {({item})=> {
-          if (item.type == 'Antipasti'){    //item.type == TIPO DI RICETTA
-            return( 
-              <Button  
-                title=  {item.title} 
-                onPress = {
-                  async() => { var value = await AsyncStorage.getItem ('@' + item.title)
-                  //console.warn (value);
-                  this.props.navigation.navigate('List', {recipe : value, titlee : JSON.parse(value).title} )
-                }
-              }/>
-            )
-          }}}
-        />
+        <SafeAreaView>
+            <FlatList   //renderizza tutte le ricette contenute in '/assets/recipes.json' e crea chiavi corrispondenti
+              extraData={this.state}
+              keyExtractor = {(item, index)=> index.toString()}
+              data = {this.state.data.recipes}
+              renderItem = {({item})=> {
+              if (item.type == 'Antipasti'){    //item.type == TIPO DI RICETTA
+                return( 
+                  <View style={{flex:1}}>
+                    <View style={{alignSelf:'center'}}>
+                      <TouchableHighlight 
+                      style={styles.buttonStyle} 
+                      onPress = {
+                        async() => { var value = await AsyncStorage.getItem ('@' + item.title)
+                        //console.warn (value);
+                        this.props.navigation.navigate('List', {recipe : value, titlee : JSON.parse(value).title} )
+                      }}>
+                        
+                        <Text style={styles.text}>{item.title}</Text>
+                        
+                      </TouchableHighlight>
+                    </View>
+                  </View>
+                )
+              }}}
+            />
+        </SafeAreaView>
       </View>
     );
   }
