@@ -4,6 +4,12 @@ import { Text, View, StyleSheet, Button, Image } from 'react-native';
 class RicetteScreen extends React.Component {
   static navigationOptions = {
     title: 'Ricette',
+
+
+    headerRight: (
+      
+      <Image
+        source={require('../../image/iconaLogo.png')} style={{width: 100, height: 60,right:5}}/>),
   };
   
     render() {
