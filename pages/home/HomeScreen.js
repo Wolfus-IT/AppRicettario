@@ -12,17 +12,17 @@ class HomeScreen extends React.Component {
 
     const onPress =  () => navigation.openDrawer();
     return  {
-     
-      
-      title: 'Home',
-
-    
+      title:'                Home',
+ 
       headerLeft: (
         <TouchableOpacity onPress={onPress} > 
         <Image
-          source={require('../../image/drawer.png')} style={{width: 30, height: 30}}/>
+          source={require('../../image/drawer.png')} style={{width: 30, height: 30,left:5}}/>
       </TouchableOpacity>
       ),
+
+
+      
   }
 };
 
@@ -36,11 +36,11 @@ class HomeScreen extends React.Component {
       
       
       <ImageBackground source={require('../../image/home1.jpg')}
-          style={{flex:1, height: undefined, width: undefined}}
-          resizeMethod="auto">
+          style={{flex:1, height: undefined, width: undefined}} resizeMethod="auto">
             
         <View style={styles.home}>    
-
+        <Image
+        source={require('../../image/logo21.png')} style={{ position:'absolute',top:20,width: 200, height: 120}}/>
           
         
             <Text style={styles.textHome}>Hi,welcome!</Text>
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     color:'white',
   },
   textHome:{
-    flex:0,
+    flex:0.07,
     alignItems: 'center',
     color:'white',
   },
@@ -88,11 +88,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     
   },
-  headerButton: {
-    height: 30,
-    width: 30,
-  },
-
+  
 });
   export default HomeScreen;
 

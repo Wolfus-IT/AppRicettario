@@ -6,6 +6,14 @@ import rice from '../../../recipes/recipes.json'
 import {AsyncStorage} from 'react-native';
 
 class home extends React.Component {
+  static navigationOptions = {
+    title: 'Dolci',
+    headerRight: (
+      <Image
+        source={require('../../../image/iconaLogo.png')} style={{width: 70, height: 40,right:5}}/>
+    ),
+  };
+  
   constructor(props){
     super(props);
     var NIET= 'suus';
@@ -13,9 +21,7 @@ class home extends React.Component {
                     data: rice,  }; 
   }
 
-  static navigationOptions = {
-    title: 'Dolci',
-  };
+  
   
   onPressButton = () => {
     this.props.navigation.navigate('List')
