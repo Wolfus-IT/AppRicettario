@@ -68,7 +68,7 @@ class home extends React.Component {
           keyExtractor = {(item)=> item.title}
           data = {this.state.data.recipes}
           renderItem = {({item})=> {
-          if (item.type == Primi){    //item.type == TIPO DI RICETTA
+          if (item.type != null){    //item.type == TIPO DI RICETTA
             return( 
               <Button  
                 title=  {item.title} 
