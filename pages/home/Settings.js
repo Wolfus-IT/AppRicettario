@@ -19,7 +19,7 @@ class Settings extends React.Component {
         <View style={styles.title}>
          <Text style={styles.title}>{'\n'}Settings</Text>   
          <Image
-        source={require('../../image/iconaLogo.png')} style={{ position:'absolute',top:20,width: 200, height: 120}}/>
+        source={require('../../image/iconaLogo.png')} style={{ position:'absolute',width: 90, height: 40,top:20,alignSelf:'flex-end'}}/>
         </View>
         
         <View style={styles.body}>
@@ -44,6 +44,7 @@ class Settings extends React.Component {
       flex: 1,
       alignItems:'center',
       fontSize: 30,
+      
     },
     body:{
         flex:5,
