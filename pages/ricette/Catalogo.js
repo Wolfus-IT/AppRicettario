@@ -41,7 +41,7 @@ render(){
           
         <View style={styles.ViewBotton}>
 
-          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton1}>
+          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton1} underlayColor='#e59400'>
             <View style={styles.ViewTesto}>
               <Text style={styles.textStyle}>Antipasti</Text>
             </View>
@@ -50,7 +50,7 @@ render(){
         </View>
         <View style={styles.ViewBotton}>
 
-          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton2}>
+          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton2} underlayColor='#e59400'>
             <View style={styles.ViewTesto}>
               <Text style={styles.textStyle}>Primi</Text>
             </View>
@@ -59,7 +59,7 @@ render(){
         </View>  
         <View style={styles.ViewBotton}>
 
-          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton3}>
+          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton3} underlayColor='#e59400'>
             <View style={styles.ViewTesto}>
               <Text style={styles.textStyle}>Secondi</Text>
             </View>
@@ -68,7 +68,7 @@ render(){
         </View> 
         <View style={styles.ViewBotton}>
 
-          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton4}>
+          <TouchableHighlight style={styles.buttonStyle2} onPress={this.onPressButton4} underlayColor='#e59400'>
             <View style={styles.ViewTesto}>
               <Text style={styles.textStyle}>Dolci</Text>
             </View>
@@ -83,11 +83,10 @@ render(){
 const styles = StyleSheet.create({
 
   buttonStyle2:{
-    backgroundColor:'#f77213',
-    margin:10,
-    //borderWidth:1,
-    borderRadius:10,
-    padding:30,
+    backgroundColor:'#ff8100',
+    margin: 10,
+    borderRadius: 10,
+    padding: 30,
     width: 200,
   },
   textStyle:{

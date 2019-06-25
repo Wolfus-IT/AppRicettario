@@ -48,7 +48,7 @@ class HomeScreen extends React.Component {
             <TouchableHighlight
               style={styles.bottonHome}
               onPress={this.onPressButton}
-              underlayColor='blue'>
+              underlayColor='#e59400'>
               <Text style={styles.textBotton}>Entra</Text>
             </TouchableHighlight>
             
@@ -67,7 +67,7 @@ class HomeScreen extends React.Component {
 const styles = StyleSheet.create({
   bottonHome: {
     alignItems: 'center',
-    backgroundColor:'#f77213',
+    backgroundColor:'#ff8100',
     justifyContent: 'center',
     borderRadius:15,
     paddingHorizontal:25,
