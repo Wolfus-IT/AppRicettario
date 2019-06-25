@@ -71,15 +71,17 @@ class home extends React.Component {
         <SafeAreaView>
             <FlatList   //renderizza tutte le ricette contenute in '/assets/recipes.json' e crea chiavi corrispondenti
               extraData={this.state}
+              style={{top:25}}
               keyExtractor = {(item, index)=> index.toString()}
               data = {this.state.data.recipes}
               renderItem = {({item})=> {
               if (item.type == 'Antipasti'){    //item.type == TIPO DI RICETTA
                 return( 
                   <View style={{flex:1}}>
-                    <View style={{alignSelf:'center'}}>
+                    <View style={{flex:1, alignSelf:'center'}}>
                       <TouchableHighlight 
-                      style={styles.buttonStyle} 
+                      style={styles.buttonStyle}
+                      underlayColor='#e59400'
                       onPress = {
                         async() => { var value = await AsyncStorage.getItem ('@' + item.title)
                         //console.warn (value);
