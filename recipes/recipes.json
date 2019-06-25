@@ -1,0 +1,61 @@
+{
+    "recipes":[
+        {
+            "title":"Latte con i biscotti", "type":"Dolci",
+            "ingredients" : 
+            [
+                {"key" : "latte"},
+                {"key" : "biscotti"}
+            ],
+            "steps" :
+            [
+                "Prendi il latte",
+                "Metti i biscotti"
+            ]
+        }, 
+        {
+            "title":"Carbonara", "type":"Primi",
+            "ingredients":
+            [
+                {"key" : "Pasta"},
+                {"key" : "Uova"},
+                {"key" : "Pancetta"}
+            ],
+            "steps" :
+            [
+                "Prendi la pasta",
+                "Ebollila"
+            ]
+        }, 
+        {
+            "title":"Pizza", "type":"Secondi",
+            "ingredients":
+            [
+                {"key" : "Impasto"},
+                {"key" : "Pomodoro"},
+                {"key" : "Mozzarella"}
+            ],
+            "steps" :
+            [
+                "Stendi l'impasto",
+                "Metti il pomodoro e la mozzarella",
+                "Cucina"
+            ]
+        },
+        {
+            "title":"Forse qualche pizza", "type":"Antipasti",
+            "ingredients":
+            [
+                {"key" : "Impasto"},
+                {"key" : "Pomodoro"},
+                {"key" : "Mozzarella"}
+            ],
+            "steps" :
+            [
+                "Stendi l'impasto",
+                "Metti il pomodoro e la mozzarella",
+                "Cucina"
+            ]
+        }
+    ]
+}

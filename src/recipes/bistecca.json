@@ -1,0 +1,16 @@
+{
+    "title" : "bistecca",
+    "type" : "pranzo",
+    "ingredients" :
+    [
+       {"key": "carne"},
+       "carne"
+    ],
+   
+    "steps" :
+    [
+        "Mettere l'olio ",
+         "Cucinare la carne ",
+         "Aggiungere il sale e il pepe"      
+    ]   
+}
