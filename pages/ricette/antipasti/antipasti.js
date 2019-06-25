@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableHighlight, Text, View, SafeAreaView, ScrollView ,FlatList, } from 'react-native';
+import { TouchableHighlight, Text, View, SafeAreaView, ScrollView ,FlatList, Image } from 'react-native';
 import { styles } from '../../../styles/bottoni';
 //import json from '../../src/recipes/pasta_asciutta.json';
 import rice from '../../../recipes/recipes.json';

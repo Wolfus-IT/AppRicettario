@@ -65,7 +65,7 @@ const MyStackNavigator = createStackNavigator({
 
 const MyDrawerNavigator = createDrawerNavigator({
   Home: MyStackNavigator,
-  ConcatUs: { screen: ConcatUs },
+  ContactUs: { screen: ContactUs },
   Settings: { screen: Settings }
 },
 {
