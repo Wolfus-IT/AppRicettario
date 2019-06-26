@@ -36,9 +36,6 @@ const MyStackNavigator = createStackNavigator({
   Catalogo: {
     screen: Catalogo,
   },
-  ContactUs: {
-    screen: ContactUs,
-  },
   //componenti del catalogo
   Antipasti: {
     screen: antipasti,
@@ -59,7 +56,7 @@ const MyStackNavigator = createStackNavigator({
   Ricetta: {
     screen: recipeSteps,
   },
-});
+},);
 
 
 
