@@ -56,7 +56,7 @@ class listComponents extends React.Component {
                       this.props.navigation.navigate('Ricetta', {recipe : this.state.data1, title :this.state.data1.title});
                       }
               }>
-              <Text style={{color: 'white', fontWeight: 'bold'}}>Start</Text>
+              <Text style={{color: 'white', fontWeight: 'bold', fontSize:20}}>Start</Text>
             </TouchableHighlight>
           </View>
         </View>
