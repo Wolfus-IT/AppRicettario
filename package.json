@@ -6,7 +6,7 @@
     "ios": "C:\\Users\\Docebo_Guest1\\AppData\\Roaming\\npm\\expo start --ios",
     "web": "C:\\Users\\Docebo_Guest1\\AppData\\Roaming\\npm\\expo start --web",
     "eject": "C:\\Users\\Docebo_Guest1\\AppData\\Roaming\\npm\\expo eject"
-  },
+},
   "dependencies": {
     "expo": "^33.0.0",
     "react": "16.8.3",
