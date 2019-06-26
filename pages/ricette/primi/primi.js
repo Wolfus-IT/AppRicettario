@@ -10,7 +10,7 @@ class home extends React.Component {
     super(props);
     var NIET= 'suus';
     this.state = { data1: [{ key: 'muori'},{key:'DIo cane'}],
-                    data: rice,  }; 
+                    data: rice,  cont : 0}; 
   }
 
   static navigationOptions = {
@@ -77,7 +77,7 @@ class home extends React.Component {
               if (item.type == 'Primi'){    //item.type == TIPO DI RICETTA
                 return( 
                   <View style={{flex:1}}>
-                    <View style={{flex:1, alignItems:'stretch', padding: 10, marginLeft: 15, marginRight: 15}}>
+                    <View style={{flex:1, padding: 5,  flexDirection: 'column'}}>
                       <TouchableHighlight 
                       style={styles.buttonStyle}
                       underlayColor='#e59400'

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Text, View, StyleSheet, Image,TouchableHighlight,ImageBackground } from 'react-native';
+import { Text, Image, View, StyleSheet, TouchableHighlight, ImageBackground } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 class HomeScreen extends React.Component {
@@ -44,19 +44,21 @@ class HomeScreen extends React.Component {
             style={{flex:1, height: undefined, width: undefined}} resizeMethod="auto"
         >     
         <View style={styles.home}>    
-          <Image
-          source={require('../../image/logo21.png')} style={{ position:'absolute',top:20,width: 200, height: 120}}
-          />
-          <Text style={styles.textHome}>Hi,welcome!</Text>
+          <Image source={require('../../image/logo21.png')} style={{ position:'absolute',top:20,width: 200, height: 120}}/>
 
-          <TouchableHighlight
-            style={styles.bottonHome}
-            onPress={this.onPressButton}
-            underlayColor='#e59400'>
-            <Text style={styles.textBotton}>Entra</Text>
-          </TouchableHighlight>
-        </View>
+            <Text style={styles.textHome}>Hi,welcome!</Text>
+           
+            <TouchableHighlight
+              style={styles.bottonHome}
+              onPress={this.onPressButton}
+              underlayColor='#e59400'>
+              <Text style={styles.textBotton}>Entra</Text>
+            </TouchableHighlight>
+          
+          </View>
+
         </ImageBackground>
+          
       );
 
     }
@@ -70,25 +72,30 @@ const styles = StyleSheet.create({
     backgroundColor:'#ff8100',
     justifyContent: 'center',
     borderRadius:15,
-    paddingHorizontal:25,
-    paddingVertical:10,
+    paddingHorizontal:30,
+    paddingVertical:15,
+    
     
   },
   textBotton:{
     color:'white',
+    fontFamily: 'notoserif', 
+    fontWeight: 'bold',
+    fontSize:18,
   },
   textHome:{
-    flex:0.07,
+    flex:0.10,
     alignItems: 'center',
     color:'white',
+    fontFamily: 'notoserif', 
+    fontSize:25,
   },
   home:{ 
-    flex: 1,
+    flex:1,
     justifyContent: "center", 
     alignItems: "center",
-    
   },
-  
+
 });
   export default HomeScreen;
 
