@@ -22,7 +22,7 @@ const CustomDrawerContentComponent = props => (
   <ScrollView>
     <SafeAreaView style={{flex: 1}} forceInset={{ top: 'always', horizontal: 'never' }}>
     <View style={{alignItems:'center',justifyContent: 'center',marginTop:50}}>
-        <Image source={require('./image/logo21.png')} style={{width: 140, height: 120}}/>
+        <Image source={require('./image/home1.jpg')} style={{width: 100, height: 100,borderRadius:60}}/>
       
     </View>
       <DrawerItems {...props} />
@@ -35,9 +35,6 @@ const MyStackNavigator = createStackNavigator({
   },
   Catalogo: {
     screen: Catalogo,
-  },
-  ContactUs: {
-    screen: ContactUs,
   },
   //componenti del catalogo
   Antipasti: {
@@ -59,7 +56,7 @@ const MyStackNavigator = createStackNavigator({
   Ricetta: {
     screen: recipeSteps,
   },
-});
+},);
 
 
 
