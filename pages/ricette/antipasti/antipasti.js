@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableHighlight, Text, View, SafeAreaView, ScrollView ,FlatList, Image } from 'react-native';
+import { TouchableHighlight, Text,ImageBackground, View, SafeAreaView, ScrollView ,FlatList, Image } from 'react-native';
 import { styles } from '../../../styles/bottoni';
 //import json from '../../src/recipes/pasta_asciutta.json';
 import rice from '../../../recipes/recipes.json';
@@ -78,7 +78,7 @@ class home extends React.Component {
               if (item.type == 'Antipasti'){    //item.type == TIPO DI RICETTA
                 return( 
                   <View style={{flex:1}}>
-                    <View style={{flex:1, alignSelf:'center'}}>
+                    <View style={{flex:1, alignItems:'stretch', padding: 10, marginLeft: 15, marginRight: 15}}>
                       <TouchableHighlight 
                       style={styles.buttonStyle}
                       underlayColor='#e59400'

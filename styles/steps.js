@@ -8,17 +8,19 @@ const styles = StyleSheet.create({
   },
 
   buttonStyle: {
-    paddingTop: 15,
-    paddingBottom: 15,
-    borderRadius: 17,
-    borderColor: '#ff8100',
+    margin: 10,
+    paddingLeft: 70,
+    paddingRight: 70,
+    paddingTop: 20,
+    paddingBottom: 20,
+    borderRadius: 10,
     backgroundColor: '#ff8100',
-    alignItems: 'center',
+    position: 'relative',
+    bottom: 15,
   },
 
   text:{
-    color: 'white',
-    fontSize: 25,
+    fontSize: 17,
     fontWeight:'bold',
   },
 

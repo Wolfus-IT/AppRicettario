@@ -1,7 +1,6 @@
 import React from 'react';
 import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View, FlatList} from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
-import { styles } from '../../../styles/styles.js';
+import { styles } from '../../../styles/lista.js';
 import json from '../../../src/recipes/pasta_asciutta.json';
 
 class listComponents extends React.Component {
@@ -14,7 +13,7 @@ class listComponents extends React.Component {
   }
 
   static navigationOptions = ({navigation}) => {
-    return{
+    return{ 
     title : navigation.getParam('titlee', 'A Nested Details Screen'),
     }
   };
@@ -27,32 +26,32 @@ class listComponents extends React.Component {
     return (
       //external
       <View style={{flex:1}}>
-
+        
         {/*lista*/}
         <View>
           <SafeAreaView>
-            <ScrollView>
-              <FlatList
-                data = {this.state.data1.ingredients}
-                style={this.container}
-                extraData = {this.state}
-                renderItem ={ ({item}) =>
-                <Text>{item.key}</Text>
+            <Text style={{fontSize: 23, paddingLeft:15, paddingTop:10}}>Ingredienti:</Text>
+            <FlatList
+              data = {this.state.data1.ingredients}
+              style={{top:25}}
+              extraData = {this.state}
+              renderItem ={ ({item}) =>
+              <View style={{paddingLeft:15}}>
+                <Text style={styles.text}> ◊ {item.key}</Text>
+              </View>
                 }    
               >
               </FlatList>  
-              <Text> {this.state.data1.title} </Text>
-            </ScrollView>
           </SafeAreaView>
         </View>
         {/*end_lista*/}
           
         {/*bottone*/}
         <View style={{flex:1}}>
-          <View style={{position:'absolute',bottom:0,alignSelf:'center'}}>
+          <View style={{position:'absolute', bottom:0, alignSelf:'center'}}>
             <TouchableHighlight
               style={styles.buttonStyle}
-              underlayColor='#008ae6'
+              underlayColor='#e59400'
               onPress={() => {
                       this.props.navigation.navigate('Ricetta', {recipe : this.state.data1, title :this.state.data1.title});
                       }
