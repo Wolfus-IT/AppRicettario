@@ -1,20 +1,5 @@
 {
 	"recipes": [{
-			"title": "Latte con i biscotti",
-			"type": "Dolci",
-			"ingredients": [{
-					"key": "latte"
-				},
-				{
-					"key": "biscotti"
-				}
-			],
-			"steps": [
-				"Prendi il latte",
-				"Metti i biscotti"
-			]
-		},
-		{
 			"title": "Spaghetti alla carbonara",
 			"type": "Primi",
 			"ingredients": [{
@@ -187,25 +172,6 @@
 			]
 		},
 		{
-			"title": "Forse qualche pizza",
-			"type": "Antipasti",
-			"ingredients": [{
-					"key": "Impasto"
-				},
-				{
-					"key": "Pomodoro"
-				},
-				{
-					"key": "Mozzarella"
-				}
-			],
-			"steps": [
-				"Stendi l'impasto",
-				"Metti il pomodoro e la mozzarella",
-				"Cucina"
-			]
-		},
-		{
 			"title": "Rotolo di frittata farcito",
 			"type": "Antipasti",
 			"ingredients": [{
@@ -332,6 +298,41 @@
 				"Imburrate e foderate con carta da forno una teglia rettangolare di 35X27 cm (oppure una teglia quadrata 30X30 cm) e versatevi l’impasto, livellandolo con una spatola per distribuirlo in modo uniforme. Cuocete in forno statico preriscaldato a 180° per 25 minuti, quindi sfornate e lasciate da parte fino al completo raffreddamento. A questo punto realizzate i vostri cubotti praticando 5 tagli orizzontali e 5 verticali ad una distanza identica per ottenere dei brownies dalle stesse dimensioni!"
 
             ]
-        }
+		},
+		{
+			"title": "Rotolo alla Nutella",
+			"type": "Dolci",
+			"ingredients": [{
+					"key": "Uova medie 4"
+				},
+				{
+					"key": "Farina 00 80 g"
+				},
+				{
+					"key": "Zucchero 115 g"
+				},
+				{
+					"key": "Estratto di vaniglia 1 cucchiaino"
+				},
+				{
+					"key": "Nutella 350 g"
+				},
+				{
+					"key": "Zucchero a velo q.b"
+				},
+				{
+					"key": "Cacao amaro in polvere q.b."
+				}
+			],
+			"steps": [
+				"Per preparare il rotolo alla Nutella rompete le uova nella ciotola di una planetaria, dotata di frusta. Iniziate a montarle a velocità media e quando risulteranno spumose aggiungete prima l'estratto di vaniglia e poi lo zucchero semolato a più riprese",
+				"Continuate a sbattere fino a che le uova non risulteranno chiare e ben montate. Spegnete la macchina e setacciate la farina direttamente all'interno delle uova. A questo punto mescolate molto delicatamente con una spatola, facendo dei movimenti rotatori dal basso verso l'alto",
+				"fino a che la farina non sarà completamente assorbita e avrete ottenuto un composto gonfio e spumoso, privo di grumi. Imburrate e foderate con la carta forno una leccarda 30x38 cm, facendo in modo che la carta fuoriesca dai bordi, in questo modo sarà più facile sollevare il rotolo una volta cotto. Versate il composto nella leccarda e con una spatola livellatelo delicatamente in modo che ricopra l'intera superficie",
+				"Cuocete in forno statico preriscaldato a 220° per circa 8-9 minuti. Prima di estrarre la teglia dal forno assicuratevi che sia effettivamente cotta la pasta biscotto. Una volta cotta togliete subito la pasta biscotto dalla leccarda e capovolgetela su un altro foglio di carta forno. Lasciatela raffreddare completamente prima di eliminare, molto delicatamente, il foglio di carta forno",
+				"A questo punto versate la Nutella sulla pasta biscotto e con una spatola spargetela su tutta la superficie, lasciando un bordo libero su tutti i lati di 2 cm. ",
+				"Aiutandovi con la carta forno arrotolate la pasta biscotto, iniziando col fare una prima piega fino ad arrotolarlo completamente. Avvolgetelo nuovamente con la carta forno facendo in modo che la chiusura del rotolo risulti verso il basso e lasciate riposare in frigorifero per circa 30 minuti. ",
+				"A questo punto scartatelo e spoverizzatelo prima con il cacao e poi con lo zucchero a velo. Il rotolo alla Nutella è pronto non vi resta che servirlo! "
+			]
+		}
 	]
 }
