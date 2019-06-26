@@ -18,13 +18,13 @@ class Settings extends React.Component {
         
         <View style={styles.title}>
          <Text style={styles.title}>{'\n'}Settings</Text>   
-         <Image
-        source={require('../../image/iconaLogo.png')} style={{ position:'absolute',width: 90, height: 40,top:20,alignSelf:'flex-end'}}/>
+         <Image source={require('../../image/iconaLogo.png')} style={{ position:'absolute',width: 90, height: 40,top:20,alignSelf:'flex-end'}}/>
         </View>
         
         <View style={styles.body}>
+
           <Text> Assistenza:    per problemi contattare '''''''''''</Text>
-          <Text>Infrmazioni:    app sviluppata da .... con React Native</Text>
+          <Text> Informazioni:    app sviluppata da:{'\n'} Aleksandro Toderenchuk,{'\n'}Danilo Pinto,{'\n'}Riccardo Genova,{'\n'}Kevin Gordon con React Native</Text>
           
         </View>
 
