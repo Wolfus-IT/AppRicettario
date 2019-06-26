@@ -30,7 +30,7 @@ class listComponents extends React.Component {
         {/*lista*/}
         <View>
           <SafeAreaView>
-            <Text style={{fontSize: 23}}>Ingredienti:</Text>
+            <Text style={{fontSize: 23, paddingLeft:15, paddingTop:10}}>Ingredienti:</Text>
             <FlatList
               data = {this.state.data1.ingredients}
               style={{top:25}}
@@ -48,10 +48,10 @@ class listComponents extends React.Component {
           
         {/*bottone*/}
         <View style={{flex:1}}>
-          <View style={{position:'absolute',bottom:0,alignSelf:'center'}}>
+          <View style={{position:'absolute', bottom:0, alignSelf:'center'}}>
             <TouchableHighlight
               style={styles.buttonStyle}
-              underlayColor='#008ae6'
+              underlayColor='#e59400'
               onPress={() => {
                       this.props.navigation.navigate('Ricetta', {recipe : this.state.data1, title :this.state.data1.title});
                       }
