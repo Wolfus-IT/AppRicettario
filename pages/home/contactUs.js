@@ -28,15 +28,15 @@ class ContactUs extends React.Component {
     return (  
 
 
-     
+      <ImageBackground source={require('../../image/bg.jpg')} style={{flex:1, height: undefined, width: undefined}} resizeMethod="auto">
     <View style={styles.container}>
      
       
       <View style={styles.title}> 
        <Text style={[styles.title,styles.text]}>{'\n'}Contact Us</Text> 
-      <ImageBackground source={require('../../image/fiamma.png')}style={{ height: 70, width: 70,alignItems:'center',justifyContent: 'center',top:200}}/>
+      
          
-       <Image source={require('../../image/iconaLogo.png')} style={{ position:'absolute',width: 90, height: 40,top:20,alignSelf:'flex-end'}}/>
+       <Image source={require('../../image/iconaLogo.png')} style={{ position:'absolute',width: 90, height: 40,top:30,alignSelf:'flex-end'}}/>
       </View>
       
       <View style={styles.body}>
@@ -48,6 +48,7 @@ class ContactUs extends React.Component {
       </View>
 
     </View>
+    </ImageBackground>
   
     );
   }
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column',
-    backgroundColor:'blue'
+    
   },
   title: {
    
