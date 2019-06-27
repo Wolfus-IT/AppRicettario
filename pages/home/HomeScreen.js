@@ -1,28 +1,35 @@
 
 import React from 'react';
-import { Text, View, StyleSheet, Button, Image,TouchableHighlight,ImageBackground,Font } from 'react-native';
+import { Text, Image, View, StyleSheet, TouchableHighlight, ImageBackground } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
-import { DrawerActions } from 'react-navigation';
-import { AuthSession } from 'expo';
 
 class HomeScreen extends React.Component {
   static navigationOptions = ({ navigation }) => { 
     
-    
-
     const onPress =  () => navigation.openDrawer();
     return  {
-      title:'                Home',
+      title:'Home',
+
+      headerStyle: {
+        backgroundColor:'#ff8100',
+      },
+
+      headerTintColor:{
+        color:'white',
+      },
+
+      headerTitleStyle:{
+        color: 'white',
+        //alignContent: 'center',
+      },
  
       headerLeft: (
-        <TouchableOpacity onPress={onPress} > 
+      <TouchableOpacity onPress={onPress} > 
         <Image
-          source={require('../../image/drawer.png')} style={{width: 30, height: 30,left:5}}/>
+          source={require('../../image/drawer.png')} style={{width: 30, height: 30,left:5}}
+        />
       </TouchableOpacity>
-      ),
-
-
-      
+    ),
   }
 };
 
@@ -33,11 +40,9 @@ class HomeScreen extends React.Component {
 
     render() {
       return (
-      
-      
-      <ImageBackground source={require('../../image/home1.jpg')}
-          style={{flex:1, height: undefined, width: undefined}} resizeMethod="auto">
-            
+        <ImageBackground source={require('../../image/home1.jpg')}
+            style={{flex:1, height: undefined, width: undefined}} resizeMethod="auto"
+        >     
         <View style={styles.home}>    
           <Image source={require('../../image/logo21.png')} style={{ position:'absolute',top:20,width: 200, height: 120}}/>
 
