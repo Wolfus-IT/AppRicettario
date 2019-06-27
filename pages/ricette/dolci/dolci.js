@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableHighlight, Text, View, SafeAreaView, Image ,FlatList, List, ListItem} from 'react-native';
+import { TouchableHighlight, Text, View, SafeAreaView, Image ,FlatList, List, ListItem,ImageBackground} from 'react-native';
 import { styles } from '../../../styles/bottoni';
 //import json from '../../src/recipes/pasta_asciutta.json';
 import rice from '../../../recipes/recipes.json'
@@ -7,12 +7,21 @@ import {AsyncStorage} from 'react-native';
 
 class home extends React.Component {
   static navigationOptions = {
-    title: 'Dolci',
+    title: '                Dolci',
+    headerStyle: {
+      backgroundColor:'#ff8100',
+    },
+
     headerRight: (
       <Image
         source={require('../../../image/iconaLogo.png')} style={{width: 70, height: 40,right:5}}/>
     ),
+    headerTitleStyle:{
+      color: 'white',
+      //alignContent: 'center',
+    },
   };
+  
   
   constructor(props){
     super(props);
@@ -66,6 +75,7 @@ class home extends React.Component {
   
   render() {
     return (
+      <ImageBackground source={require('../../../image/bg.jpg')} style={{flex:1, height: undefined, width: undefined}} resizeMethod="auto">
       <View>
         <SafeAreaView>
             <FlatList   //renderizza tutte le ricette contenute in '/assets/recipes.json' e crea chiavi corrispondenti
@@ -97,6 +107,7 @@ class home extends React.Component {
             />
         </SafeAreaView>
       </View>
+      </ImageBackground>
     );
   }
 }

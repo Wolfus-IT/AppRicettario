@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View, FlatList} from 'react-native';
+import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View, FlatList,ImageBackground} from 'react-native';
 import { styles } from '../../../styles/lista.js';
 import json from '../../../src/recipes/pasta_asciutta.json';
 
@@ -14,6 +14,14 @@ class listComponents extends React.Component {
 
   static navigationOptions = ({navigation}) => {
     return{ 
+      headerStyle: {
+        backgroundColor:'#ff8100',
+      },
+      headerTitleStyle:{
+        color: 'white',
+        //alignContent: 'center',
+      },
+
     title : navigation.getParam('titlee', 'A Nested Details Screen'),
     }
   };
@@ -23,7 +31,7 @@ class listComponents extends React.Component {
   }
   
   render() {
-    return (
+    return ( 
       //external
       <View style={{flex:1}}>
         
@@ -60,6 +68,7 @@ class listComponents extends React.Component {
         </View>
         {/*end_bottone*/}
       </View>
+     
       //end_external
     );
   }
