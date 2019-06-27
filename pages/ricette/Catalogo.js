@@ -12,8 +12,6 @@ class RicetteScreen extends React.Component {
         backgroundColor:'#ff8100',
       },
 
-      
-
       headerTitleStyle:{
         color: 'white',
       },
@@ -89,7 +87,7 @@ render(){
 
         </View> 
       </ImageBackground>
-      )
+      );
     }
 }
 

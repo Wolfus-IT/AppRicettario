@@ -91,9 +91,9 @@ class home extends React.Component {
                       style={styles.buttonStyle}
                       underlayColor='#e59400'
                       onPress = {
-                        async() => { var value = await AsyncStorage.getItem ('@' + item.title)
+                        () => { var value = item;
                         //console.warn (value);
-                        this.props.navigation.navigate('List', {recipe : value, titlee : JSON.parse(value).title} )
+                        this.props.navigation.navigate('List', {recipe : JSON.stringify(value), titlee :  value.title} )
                       }}>
                         
                         <Text style={styles.text}>{item.title}</Text>
