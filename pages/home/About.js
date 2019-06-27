@@ -11,25 +11,26 @@ class Settings extends React.Component {
       return (  
 
 
-        <ImageBackground source={require('../../image/impostazion.jpg')}
-        style={{flex:1, height: undefined, width: undefined,resizeMode: 'contain'}} >
+       
       <View style={styles.container}>
+       
         
-        
-        <View style={styles.title}>
-         <Text style={styles.title}>{'\n'}Settings</Text>   
+        <View style={styles.title}> 
+         <Text style={[styles.title,styles.text]}>{'\n'}About</Text> 
+        <ImageBackground source={require('../../image/fiamma.png')}style={{ height: 70, width: 70,alignItems:'center',justifyContent: 'center',top:200}}/>
+           
          <Image source={require('../../image/iconaLogo.png')} style={{ position:'absolute',width: 90, height: 40,top:20,alignSelf:'flex-end'}}/>
         </View>
         
         <View style={styles.body}>
 
-          <Text> Assistenza:    per problemi contattare '''''''''''</Text>
-          <Text> Informazioni:    app sviluppata da:{'\n'} Aleksandro Toderenchuk,{'\n'}Danilo Pinto,{'\n'}Riccardo Genova,{'\n'}Kevin Gordon con React Native</Text>
-          
+          <Text style={styles.text}> Assistenza:    per problemi contattare '''''''''''</Text>
+          <Text style={styles.text}> Informazioni:    app sviluppata da:{'\n'}Aleksandro Toderenchuk,{'\n'}Danilo Pinto,{'\n'}Riccardo Genova,{'\n'}Kevin Gordon con React Native</Text>
+          <Text style={styles.text}> Linguaggio di programmazione: React Native{'\n'} con l'aiuto del Team Mobile</Text>
         </View>
 
       </View>
-      </ImageBackground >
+    
       );
     }
   }
@@ -37,20 +38,23 @@ class Settings extends React.Component {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      flexDirection: 'column'
-        
+      flexDirection: 'column',
+      backgroundColor:'blue'
     },
     title: {
-      flex: 1,
+     
       alignItems:'center',
       fontSize: 30,
       
     },
     body:{
-        flex:5,
+        flex:0.8,
         flexDirection: 'column',
         justifyContent: 'space-evenly',
         
-    }
+    },
+  text:{
+    color:'white'
+  },
   });
   export default Settings;

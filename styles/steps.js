@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
   },
 
   buttonStyle: {
+    margin: 10,
     paddingLeft: 70,
     paddingRight: 70,
     paddingTop: 20,
@@ -15,14 +16,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     backgroundColor: '#ff8100',
     position: 'relative',
-    alignItems: 'center',
     bottom: 15,
   },
 
   text:{
     fontSize: 17,
-    fontWeight:'300',
-    color: '#4d4d4d',
+    fontWeight:'bold',
   },
 
 });

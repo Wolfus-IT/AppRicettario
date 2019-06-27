@@ -74,10 +74,10 @@ class home extends React.Component {
               keyExtractor = {(item, index)=> index.toString()}
               data = {this.state.data.recipes}
               renderItem = {({item})=> {
-              if (item.type == 'Antipasti'){    //item.type == TIPO DI RICETTA
+              if (item.type == 'Secondi'){    //item.type == TIPO DI RICETTA
                 return( 
                   <View style={{flex:1}}>
-                    <View style={{flex:1, alignSelf:'center'}}>
+                    <View style={{flex:1, alignItems:'stretch', padding: 10, marginLeft: 15, marginRight: 15}}>
                       <TouchableHighlight 
                       style={styles.buttonStyle}
                       underlayColor='#e59400'
