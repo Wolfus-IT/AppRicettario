@@ -2,8 +2,25 @@ import React from 'react';
 import { Text, View, StyleSheet, Button, Image } from 'react-native';
 
 class ContactUs extends React.Component {
-  static navigationOptions = {
-    title: 'Contact us',
+  static navigationOptions = ({ navigation }) => { 
+    
+    const onPress =  () => navigation.openDrawer();
+    return  {
+      title:'Contattaci',
+
+      headerStyle: {
+        backgroundColor:'#ff8100',
+      },
+
+      headerTintColor:{
+        color:'white',
+      },
+
+      headerTitleStyle:{
+        color: 'white',
+        //alignContent: 'center',
+      },
+    };
   };
   
     render() {

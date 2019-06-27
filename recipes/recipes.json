@@ -300,6 +300,96 @@
             ]
 		},
 		{
+			"title": "Arancini di riso",
+			"type": "Antipasti",
+			"ingredients": [{
+					"key": "Zafferano 1 bustina"
+				},
+				{
+					"key": "Riso vialone nano 500 g"
+				},
+				{
+					"key": "Acqua 1,2 l"
+				},
+				{
+					"key": "Burro 30 g"
+				},
+				{
+					"key": "Sale fino 1 pizzico"
+				},
+				{
+					"key": "Caciocavallo stagionato da grattugiare 100 g"
+				},
+				{
+					"key": "Sale fino q.b"
+				},
+				{
+					"key": "Cipolle ½"
+				},
+				{
+					"key": "Maiale macinato 100 g"
+				},
+				{
+					"key": "Passata di pomodoro 200 ml"
+				},
+				{
+					"key": "Caciocavallo fresco 50 g"
+				},
+				{
+					"key": "Pepe nero q.b"
+				},
+				{
+					"key": "Burro 25 g"
+				},
+				{
+					"key": "Olio extravergine d'oliva q.b"
+				},
+				{
+					"key": "Pisellini 80 g"
+				},
+				{
+					"key": "Vino rosso 50 ml"
+				},
+				{
+					"key": "Prosciutto cotto in una sola fetta 30 g"
+				},
+				{
+					"key": "Mozzarella 60 g"
+				},
+				{
+					"key": "Farina 00 200 g"
+				},
+				{
+					"key": "Acqua 300 ml"
+				},
+				{
+					"key": "Sale fino 1 pizzico"
+				},
+				{
+					"key": "Acqua 300 ml"
+				},
+				{
+					"key": "Pangrattato q.b."
+				},
+				{
+					"key": "Olio di semi q.b."
+				}
+
+			],
+			"steps": [
+				"Per preparare gli arancini di riso, iniziate lessando il riso in 1,2 l di acqua bollente salata, in modo da far si che, a cottura avvenuta, l'acqua sia stata completamente assorbita (questo permetterà all'amido di rimanere tutto in pentola e otterrete un riso molto asciutto e compatto). Fate cuocere per circa 15 minuti, poi sciogliete lo zafferano in pochissima acqua calda e unitelo al riso ormai cotto. Unite anche il burro a pezzetti.",
+				"Unite il formaggio grattugiato, mescolate bene per amalgamare il tutto, dopodiché  versate e livellate il riso su un vassoio ampio e basso e copritelo con la pellicola, per farlo rafferddare completamente, la pellicola eviterà che la superficie del riso si secchi. Lasciate riposare il riso per un paio di ore fuori dal frigorifero. Intanto dedicatevi al ripieno al ragù: mondate e affettate finemente la cipolla",
+				"Fate stufare la cipolla tritata in un tegame con 2 cucchiai d’olio e il burro, poi unite la carne macinata; fatela rosolare a fuoco vivace, quindi aggiungete il vino e lasciatelo sfumare",
+				"A questo punto aggiungete la passata di pomodoro, aggiustate di sale e di pepe a piacere e fate cuocere a fuoco lento coperto per almeno 20 minuti. A metà cottura, aggiungete i piselli (se necessario potete aggiungere pochissima acqua calda perchè il ragù dovrà risultare ben rappreso e non liquido).",
+				"Mentre i piselli si cuociono tagliate a cubetti il caciocavallo, il prosciutto cotto e la mozzarella. Avrete così pronti tutti i ripieni.",
+				"Una volta che il riso si sarà raffreddato completamente (ci vorranno almeno un paio di ore), potrete formare gli arancini, per aiutarvi nella formazione tenete vicino una ciotola colma di acqua così da potervi inumidirvi le mani. Prelevate un paio di cucchiai di riso per volta (circa 120 gr di riso), schiacciate il mucchietto al centro del mano formando una conca e versateci all'interno un cucchiaino di ripieno al ragù, aggiungete qualche cubetto di caciocavallo",
+				"Quindi richiudete la base dell'arancino con il riso e modellatelo dandogli una forma a punta: potete dare questa forma a tutti gli arancini farciti con il ragù. Mentre per il ripieno al prosciutto, farcite ciascun arancino (formato circa da 130 gr di riso) con dadini di prosciutto e mozzarella.",
+				"e modellateli dandogli una forma rotonda. Ora che avete tutti gli arancini pronti, preparate la pastella: in una ciotola versate la farina setacciata, un pizzico di sale e l'acqu a filo. Mescolate accuratamente con una frusta per evitare che si formino grumi.",
+				"Quindi tuffate gli arancini, uno ad uno, nella pastella avendo cura di ricoprirli interamente 26 e rotolateli nel pangrattato.",
+				"In un pentolino scaldate l'olio e portatelo alla temperatura di 170°, a quel punto friggete un arancino alla volta o massimo due per non abbassare la temperatura dell'olio: quando saranno ben dorati potrete scolarlo ponendoli su un vassoio foderato con carta assorbente. Mi raccomando: gustate gli arancini di riso ben caldi!"
+			]
+		},
+		{
 			"title": "Rotolo alla Nutella",
 			"type": "Dolci",
 			"ingredients": [{
@@ -333,6 +423,111 @@
 				"Aiutandovi con la carta forno arrotolate la pasta biscotto, iniziando col fare una prima piega fino ad arrotolarlo completamente. Avvolgetelo nuovamente con la carta forno facendo in modo che la chiusura del rotolo risulti verso il basso e lasciate riposare in frigorifero per circa 30 minuti. ",
 				"A questo punto scartatelo e spoverizzatelo prima con il cacao e poi con lo zucchero a velo. Il rotolo alla Nutella è pronto non vi resta che servirlo! "
 			]
+		},
+		{
+			"title": "Crocchette di patate",
+			"type": "Antipasti",
+			"ingredients": [{
+					"key": "Patate rosse 1 kg"
+				},
+				{
+					"key": "Noce moscata q.b"
+				},
+				{
+					"key": "Sale fino q.b."
+				},
+				{
+					"key": "Tuorli 30 g"
+				},
+				{
+					"key": "Pepe nero q.b."
+				},
+				{
+					"key": "Parmigiano reggiano grattugiato 100 g"
+				},
+				{
+					"key": "Uova (2 medie) 130 g"
+				},
+				{
+					"key": "Pangrattato q.b."
+				},
+				{
+					"key": "Olio di semi di arachide q.b"
+				}
+			],
+			"steps": [
+				"Per preparare le crocchette di patate lavate le patate sotto l’acqua corrente per togliere residui di terra, ponetele a lessare in un tegame capiente versando acqua fino a coprire e senza sbucciarle: utilizzate patate il più possibile della stessa dimensione così da uniformare la cottura. Ci vorranno circa 40 minuti se le bollite oppure la metà del tempo circa con una pentola a pressione. Una volta pronte, lasciatele leggermente intiepidire (giusto quello che servirà per poterle maneggiare) e poi sbucciatele.",
+				"Passatele in uno schiacciapatate per ottenere una purea mentre sono ancora calde; in una ciotolina a parte sbattete i tuorli con pepe e sale (conseiderate che 30 g di tuorli corrispondono a 2 quelli di uova medie) e poi aggiungeteli alla purea di patate",
+				"Aromatizzate con la noce moscata grattugiata e insaporite con il formaggio grattugiato, mescolate con un cucchiaio per amalgamare gli ingredienti fino ad ottenere un composto morbido e asciutto. Prendete una porzione di impasto del peso di circa 35 g e formate le crocchette",
+				"dando una forma a cilindo, con le due estremità leggermente schiacciate. Man mano che formate le crocchette adagiatele su un vassoio rivestito con carta da forno. Con la dose indicata otterrete circa 30 crocchette. Una volta ultimato l’impasto impanate le crocchette: preparate due ciotole rispettivamente con le due uova sbattute e l'altra con il pangrattato. Passate le crocchette prima nell’uovo e poi nel pangrattato",
+				"Adagiate le crocchette su un vassoio rivestito con carta da forno. Una volta terminate tutte le crocchette, scaldate abbondante olio di arachidi in un tegame non troppo grande fino a raggiungere i 180-190° (si consiglia l'uso di un termometro da cucina per monitorare al meglio la temperatura) e poi tuffate all’interno 3-4 crocchette alla volta per non fare abbassare  la temperatura dell’olio. Cuocete rigirandole con una schiumarola fino a quando non saranno ben dorate su tutti i lati. Scolatele e mettetele a scolare dell’olio in eccesso su di un piatto foderato con carta assorbente. Servite le crocchette di patate ancora calde!"
+			]
+		},
+		{
+			"title": "Spaghetti Cacio e Pepe",
+			"type": "Primi",
+			"ingredients": [{
+					"key": "Spaghetti 320 g"
+				},
+				{
+					"key": "Pecorino romano stagionatura media, da grattugiare 200 g"
+				},
+				{
+					"key": "Pepe nero in grani q.b."
+				},
+				{
+					"key": "Sale fino q.b."
+				}
+			],
+			"steps": [
+				"Per preparare gli spaghetti cacio e pepe, come prima cosa occupatevi di grattugiare 200 g di Pecorino. Proseguite mettendo a bollire l'acqua in un tegame (mettetene circa la metà di quanto ne usate di solito per cuocere la pasta, così sarà più ricca di amido) e quando bollirà potete salare a piacere. Una volta salata, potete cuocere gli spaghetti. Nel frattempo, versate i grani di pepe interi su un tagliere, quindi schiacciateli pestando con un pestello per carne o un macinino. In questo modo si sprigionerà maggiormente il profumo pungente del pepe.",
+				"Versate metà dose di pepe schiacciato in una padella ampia antiaderente, tostatelo a fuoco dolce mescolando con una paletta di legno 5, poi sfumate con paio di mestoli di acqua di cottura della pasta. Le bollicine che vedrete comparire saranno dovute all'amido contenuto nell'acqua. Scolate quindi gli spaghetti quando saranno molto al dente (tenendo da parte l'acqua di cottura) e versateli direttamente nella padella con il pepe tostato; proseguiranno la cottura con il condimento.",
+				"Smuovete la pasta continuamente con delle pinze da cucina per farla respirare e aggiungete un mestolo di acqua o due al bisogno, per continuare la cottura risottando gli spaghetti 8. Continuate a versare un mestolo di acqua solo al bisogno (quando vedete che la padella è quasi completamente asciutta) e a rimestare con le pinze da cucina. Nel frattempo che la pasta arriva a cottura, occupatevi della crema al Pecorino (non iniziate prima questa operazione perchè la crema si rapprenderebbe troppo): versatene circa metà dose di Pecorino grattugiato in una ciotola.",
+				"Aggiungete un mestolo di acqua di cottura della pasta sul Pecorino grattugiato. Mescolate con una frusta in maniera energica e aggiungete ancora acqua al bisogno. Unite poi la dose restante di Pecorino, tenendone poco da parte per condire successivamente. Unite ancora un po' di acqua al bisogno: in questa fase dovrete calibrare bene dose di Pecorino e acqua per ottenere una cremina della giusta consistenzae senza grumi.",
+				"Terminate la cottura della pasta, aggiungendo poca acqua calda ancora se necessario; prima di unire la crema di Pecorino, mescolate brevemente la crema ponendo la ciotola sopra il vapore del tegame con acqua calda, mescolate sempre con la frusta, così da riportare la crema ad una temperatura simile a quella della pasta. Spegnete il fuoco della padella con gli spaghetti e versate la crema di Pecorino.",
+				"Mentre versate la crema di Pecorino sugli spaghetti, muoveteli continuamente con la pinza da cucina, versate anche il Pecorino che avevate tenuto da parte, mescolate e saltate ancora la pasta quindi impiattate i vostri spaghetti cacio e pepe e insaporite con il restante pepe, gustate subito in tutta la loro cremosità!"
+			]
+		},
+		{
+			"title": "Saltimbocca alla Romana",
+			"type": "Secondi",
+			"ingredients": [{
+					"key": "Fettine di vitello (4 fette di noce di vitello) 300 g"
+				},
+				{
+					"key": "Salvia 4 foglie"
+				},
+				{
+					"key": "Vino bianco 100 g"
+				},
+				{
+					"key": "Farina 00 50 g"
+				},
+				{
+					"key": "Acqua 20 g"
+				},
+				{
+					"key": "Prosciutto crudo (4 fette sottili) 40 g"
+				},
+				{
+					"key": "Burro 50 g"
+				},
+				{
+					"key": "Pepe nero q.b."
+				},
+				{
+					"key": "Olio extravergine d'oliva 20 g"
+				}
+			],
+			"steps": [
+				"Per preparare i saltimbocca alla romana iniziate tagliando a fette la noce di vitello, poi adagiate ciascuna fetta su un tagliere, eliminate eventuali nervetti e grasso e poi battete con un batticarne per renderla sottile. A questo punto ponete al centro una fetta sottile di prosciutto crudo;",
+				"e una foglia di salvia. Infilzate con uno stuzzicadenti la carne e la farcia in modo da sigillare tutto per bene. Versate in una padella 40 g di burro e 20 g di olio e fate sciogliere a temperatura medio alta.",
+				"Infarinate le fette di carne solo da un lato e man mano adagiatele nella padella con il condimento ben caldo aumentate la temperatura così da dorare bene i saltimbocca. Pepate a piacere ma non salate perchè la presenza del prosciutto renderà sapida la pietanza.",
+				"Quando la carne risulterà ben dorata sotto, sfumate con il vino bianco e lasciate evaporare. Non appena l'alcol sarà evaporato completamente, coprite con il coperchio e cuocete ancora per 1 minuto. Trasferite i saltimbocca in un piatto e teneteli in caldo.",
+				"Ora occupatevi del sughetto di accompagnamento: nella stessa padella con il fondo di cottura della carne aggiungete 10 g di burro e l'acqua. Lasciate restringere fino a creare una cremina leggermente densa.",
+				"Ora distribuite la cremina sul fondo di un piatto di portata e adagiate sopra le fettine di carne. I saltimbocca alla romana sono pronti per essere portati in tavola."
+			]
 		}
+
 	]
 }

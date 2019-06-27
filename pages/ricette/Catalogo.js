@@ -2,15 +2,31 @@ import React, {Component} from 'react';
 import {AppRegistry,StyleSheet,TouchableHighlight,Text,View, SafeAreaView, FlatList ,ImageBackground,Image} from 'react-native';
 
 class RicetteScreen extends React.Component {
-  static navigationOptions = {
-    title: 'Catalogo',
+  static navigationOptions = ({ navigation }) => { 
     
+    const onPress =  () => navigation.openDrawer();
+    return  {
+      title:'Catalogo',
+
+      headerStyle: {
+        backgroundColor:'#ff8100',
+      },
+
+      headerTintColor:{
+        color:'white',
+      },
+
+      headerTitleStyle:{
+        color: 'white',
+        //alignContent: 'center',
+      },
     headerRight: (
       
       <Image
         source={require('../../image/iconaLogo.png')} style={{width: 70, height: 40,right:5}}/>
     
     ),
+  };
   };
 
    onPressButton1 = () => {
