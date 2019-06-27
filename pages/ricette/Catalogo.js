@@ -6,19 +6,16 @@ class RicetteScreen extends React.Component {
     
     const onPress =  () => navigation.openDrawer();
     return  {
-      title:'Catalogo',
+      title:'             Catalogo',
 
       headerStyle: {
         backgroundColor:'#ff8100',
       },
 
-      headerTintColor:{
-        color:'white',
-      },
+      
 
       headerTitleStyle:{
         color: 'white',
-        //alignContent: 'center',
       },
     headerRight: (
       
@@ -51,7 +48,7 @@ render(){
     
 
     return (
-      <ImageBackground source={require('../../image/catalogoIB.jpg')}
+      <ImageBackground source={require('../../image/bg.jpg')}
         style={{flex:1, height: undefined, width: undefined}}
         resizeMethod="auto">
           

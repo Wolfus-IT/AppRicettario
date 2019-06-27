@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableHighlight, Text, View, SafeAreaView, Image ,FlatList, List, ListItem} from 'react-native';
+import { TouchableHighlight, Text, View, SafeAreaView, Image ,FlatList, List, ListItem,ImageBackground} from 'react-native';
 import { styles } from '../../../styles/bottoni';
 //import json from '../../src/recipes/pasta_asciutta.json';
 import rice from '../../../recipes/recipes.json'
@@ -14,7 +14,14 @@ class home extends React.Component {
   }
 
   static navigationOptions = {
-    title: 'Primi',
+    title: '                Primi',
+    headerStyle: {
+      backgroundColor:'#ff8100',
+    },
+    headerTitleStyle:{
+      color: 'white',
+      //alignContent: 'center',
+    },
     headerRight: (
       <Image
         source={require('../../../image/iconaLogo.png')} style={{width: 70, height: 40,right:5}}/>
@@ -66,17 +73,19 @@ class home extends React.Component {
   
   render() {
     return (
+      <ImageBackground source={require('../../../image/bg.jpg')} style={{flex:1, height: undefined, width: undefined}} resizeMethod="auto">
       <View>
         <SafeAreaView>
             <FlatList   //renderizza tutte le ricette contenute in '/assets/recipes.json' e crea chiavi corrispondenti
               extraData={this.state}
+              numColumns={3}
               style={{top:25}}
               keyExtractor = {(item, index)=> index.toString()}
               data = {this.state.data.recipes}
               renderItem = {({item})=> {
               if (item.type == 'Primi'){    //item.type == TIPO DI RICETTA
                 return( 
-                  <View style={{flex:1}}>
+                  <View style={{flex:1,alignItems:'center'}}>
                     <View style={{flex:1, padding: 5,  flexDirection: 'column'}}>
                       <TouchableHighlight 
                       style={styles.buttonStyle}
@@ -97,6 +106,7 @@ class home extends React.Component {
             />
         </SafeAreaView>
       </View>
+      </ImageBackground>
     );
   }
 }

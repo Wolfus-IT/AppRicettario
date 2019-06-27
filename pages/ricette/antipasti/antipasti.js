@@ -1,5 +1,5 @@
 import React from 'react';
-import { TouchableHighlight, Text,ImageBackground, View, SafeAreaView, ScrollView ,FlatList, Image } from 'react-native';
+import { TouchableHighlight, Text,ImageBackground, View, SafeAreaView, ScrollView ,FlatList, Image, } from 'react-native';
 import { styles } from '../../../styles/bottoni';
 //import json from '../../src/recipes/pasta_asciutta.json';
 import rice from '../../../recipes/recipes.json';
@@ -14,8 +14,15 @@ class home extends React.Component {
   }
 
   static navigationOptions = {
-    title: 'Antipasti',
-   
+    title: '            Antipasti',
+    headerStyle: {
+      backgroundColor:'#ff8100',
+    },
+    headerTitleStyle:{
+      color: 'white',
+      //alignContent: 'center',
+    },
+
     headerRight: (
       <Image
         source={require('../../../image/iconaLogo.png')} style={{width: 70, height: 40,right:5}}/>
@@ -67,6 +74,7 @@ class home extends React.Component {
   
   render() {
     return (
+      <ImageBackground source={require('../../../image/bg.jpg')} style={{flex:1, height: undefined, width: undefined}} resizeMethod="auto">
       <View>
         <SafeAreaView>
             <FlatList   //renderizza tutte le ricette contenute in '/assets/recipes.json' e crea chiavi corrispondenti
@@ -98,6 +106,7 @@ class home extends React.Component {
             />
         </SafeAreaView>
       </View>
+      </ImageBackground>
     );
   }
 }

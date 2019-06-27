@@ -8,7 +8,7 @@ class HomeScreen extends React.Component {
     
     const onPress =  () => navigation.openDrawer();
     return  {
-      title:'Home',
+      title:'             Home',
 
       headerStyle: {
         backgroundColor:'#ff8100',
