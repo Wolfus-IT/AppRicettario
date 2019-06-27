@@ -145,6 +145,44 @@
                 "Una volta pronte, aromatizzate con origano secco e potrete gustare le vostre polpette al sugo ancora fumanti!"
             ]
         },
+        
+		{
+			"title": "Pizza",
+			"type": "Secondi",
+			"ingredients": [{
+					"key": "Impasto"
+				},
+				{
+					"key": "Pomodoro"
+				},
+				{
+					"key": "Mozzarella"
+                },
+            {"key" : " Farina Manitoba 200 g "},
+            {"key" : "Farina 00 300 g "},
+            {"key" :   "Acqua 300 ml "},
+            {"key"  :  "Olio extravergine d'oliva 35 g "},
+            {"key" :   "Sale fino 10 g "},
+            {"key" : "Lievito di birra fresco 5 g "}
+			],
+			"steps": [
+				"Per preparare la pizza margherita, come prima cosa iniziate a realizzare l'impasto di base. Versate l'acqua a temperatura ambiente in una brocca, aggiungete il lievito e mescolate con un cucchiaino in modo da farlo sciogliere completamente. Se preferite potete realizzare l'impasto di base anche in planetaria, utilizzando il gancio e azionandola a velocità medio-bassa.",
+				"Quindi in una ciotola unite le due farine,poi aggiungete circa metà dell'acqua a filo impastando man mano con le mani. Unite anche il sale e la parte restante di acqua.  Continuate a lavorare il composto con le mani fino ad ottenere un risultato uniforme.",
+                "A questo punto aggiungete anche l'olio, sempre poco per volta, continuando ad impastare in modo da favorirne l'assorbimento.",
+                "Trasferite poi l'impasto su un piano e lavoratelo energicamente per qualche minuto fino a che non risulterà liscio ed elastico.",
+                "Ottenuto un bel panetto liscio, lasciatelo riposare sul piano di lavoro per una decina di minuti coprendolo con la ciotola.",
+                "Una volta riposato dategli una piccola piega: immaginate che la sfera sia divisa in 4 parti, prendete l’estremità di ognuna, tiratela delicatamente e ripiegatela verso il centro, infine dategli la forma di una sfera.",                
+                "Trasferite l'impasto così formato in una ciotola, coprite con pellicola trasparente 12 e lasciate lievitare. Per comodità potete mettere la ciotola in forno spento ma con la luce accesa, mediamente l’impasto dovrebbe impiegare 2 ore a raddoppiare di volume.",
+                "Quando l'impasto sarà ben lievitato, trasferitelo su un piano capovolgendo delicatamente la ciotola e dividetelo a metà utilizzando un tarocco; se dovesse essere necessario potete spolverizzare il piano con un po' di farina.",                
+                "Trasferite i due impasti su un vassoio  e lasciateli riposare ancora per una mezz'oretta, sempre coperti con pellicola o con un canovaccio.",
+                "Nel frattempo preriscaldate il forno a 250° in modalità statica e occupatevi di preparare gli ingredienti per la farcitura. Per prima cosa ponete un colino su una ciotola e con le mani sfilacciate la mozzarella 19 posizionandola man mano nel colino. In questo modo perderà tutto il siero in eccesso.",
+                "Versate la polpa di pomodoro in un'altra ciotola e conditela con il sale, un giro d'olio e l'origano. Mescolate il tutto e non appena saranno trascorsi i 30 minuti riprendete l'impasto.",
+                "Spolverizzate il piano di lavoro e posizionatevi uno dei due panetti. Con le mani schiacciatelo leggermente, poi stendetelo esercitando una leggera pressione e facendo un movimento rotatorio. Evitate di schiacciare troppo le bolle e se l'impasto dovesse risultare troppo elastico attendete qualche minuto prima di lavorarlo ancora.",
+                "Sollevate il disco di impasto, posizionatelo sulle mani chiudendole a pugno e ruotatelo; in questo modo si stenderà ulteriormente",                
+                "Ungete leggermente una teglia del diametro di 28 cm e posizionate l'impasto all'interno aiutandovi con le mani per donargli una forma regolare. Cospargete con metà del pomodoro e cuocete in forno statico preriscaldato a 250° per 6-7 minuti, sul ripiano centrale.",
+                "Trascorso questo tempo, sfornate la pizza, aggiungete il fiordilatte e infornate nuovamente per 6-7 minuti alla stessa temperatura. Quindi sfornate la vostra pizza margherita e guarnite con le foglioline di basilico fresco."
+			]
+		},
 		{
 			"title": "Rotolo di frittata farcito",
 			"type": "Antipasti",
