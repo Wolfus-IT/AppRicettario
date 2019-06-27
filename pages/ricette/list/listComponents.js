@@ -29,7 +29,6 @@ class listComponents extends React.Component {
         
         {/*lista*/}
         <View>
-          <SafeAreaView>
             <Text style={{fontSize: 23, paddingLeft:15, paddingTop:10}}>Ingredienti:</Text>
             <FlatList
               data = {this.state.data1.ingredients}
@@ -42,7 +41,6 @@ class listComponents extends React.Component {
                 }    
               >
               </FlatList>  
-          </SafeAreaView>
         </View>
         {/*end_lista*/}
           

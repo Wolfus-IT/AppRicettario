@@ -145,32 +145,6 @@
                 "Una volta pronte, aromatizzate con origano secco e potrete gustare le vostre polpette al sugo ancora fumanti!"
             ]
         },
-        
-		{
-			"title": "Pizza",
-			"type": "Secondi",
-			"ingredients": [{
-					"key": "Impasto"
-				},
-				{
-					"key": "Pomodoro"
-				},
-				{
-					"key": "Mozzarella"
-                },
-               " Farina Manitoba 200 g ",
-                "Farina 00 300 g ",
-                "Acqua 300 ml ",
-                "Olio extravergine d'oliva 35 g ",
-                "Sale fino 10 g ",
-                "Lievito di birra fresco 5 g "
-			],
-			"steps": [
-				"Stendi l'impasto",
-				"Metti il pomodoro e la mozzarella",
-				"Cucina"
-			]
-		},
 		{
 			"title": "Rotolo di frittata farcito",
 			"type": "Antipasti",
@@ -363,12 +337,6 @@
 					"key": "Acqua 300 ml"
 				},
 				{
-					"key": "Sale fino 1 pizzico"
-				},
-				{
-					"key": "Acqua 300 ml"
-				},
-				{
 					"key": "Pangrattato q.b."
 				},
 				{
@@ -527,7 +495,90 @@
 				"Ora occupatevi del sughetto di accompagnamento: nella stessa padella con il fondo di cottura della carne aggiungete 10 g di burro e l'acqua. Lasciate restringere fino a creare una cremina leggermente densa.",
 				"Ora distribuite la cremina sul fondo di un piatto di portata e adagiate sopra le fettine di carne. I saltimbocca alla romana sono pronti per essere portati in tavola."
 			]
-		}
+		},
+        {
+            "title" :"Pappardelle agli asparagi e gamberi",
+            "type" : "Primi",
+            "ingredients" : [{
+                "key" : "Pappardelle all'uovo 250 g"
+            },
+            {
+                "key" : "Gamberi code sgusciate 200 g"
+            },
+            {
+                "key" : "Cipolle dorate piccola 1"
+            },
+            {
+                "key" : "Panna fresca liquida 100 g"
+            },
+            {
+                "key" : "Sale fino q.b."
+            },
+            {
+                "key" : "Asparagi 400 g"
+            },
+            {
+                "key" : "Burro 30 g"
+            },
+            {
+                "key" : "Vino bianco 60 g"
+            },
+            {
+                "key" : "Erba cipollina tritata 2 cucchiai"
+            },
+            {
+                "key" : "Pepe nero q.b."
+            }
+            ],
+            "steps" : [
+                "Per preparare le pappardelle agli asparagi e gamberi iniziate dalla pulizia degli asparagi: tagliate via la base e pelate la parte più chiara e coriacea. Bollite gli asparagi interi in un’apposita asparagera per 5-10 minuti, tenendo le punte fuori dall’acqua. La cottura non dovrebbe essere prolungata per non disfare gli asparagi che devono mantenere una certa consistenza: in questo caso dovrete regolarvi in base alla grandezza degli asparagi stessi.",
+                "Togliete gli asparagi dalla pentola e tagliatene metà a rondelle conservandone le punte. Usate l'altra metà degli asparagi per creare una salsa: frullateli in un mixer con un mestolo di acqua di cottura fino a ottenere un composto cremoso.",
+                "Nel frattempo, tritate finemente la cipolla, sciogliete 30 grammi di burro in una casseruola antiaderente, versate la cipolla tritata e lasciatela appassire per 3 minuti circa a fuoco moderato. Intanto ponete sul fuoco una pentola colma di acqua salata e portate al bollore, servirà per la cottura della pasta.",
+				"Aggiungete le code di gamberi sgusciate, cuocete qualche minuto e sfumate con il vino bianco. Lasciate evaporare e poi unite gli asparagi a rondelle.",
+				"Incorporate anche la salsa e la panna, salate e pepate a piacere e proseguite la cottura a fuoco moderato. Nel frattempo cuocete la pasta per circa 4 minuti o il tempo riportato sulla confezione.",
+                "Scolate la pasta tenendo da parte l’acqua di cottura. Versate le pappardelle nel tegame con il condimento, unite le punte degli asparagi tenute da parte, fate saltare qualche istante e aggiungete acqua di cottura se necessario.",
+                "Per finire insaporite con l’erba cipollina tritata. Le pappardelle agli asparagi e gamberi sono pronti, servite ben calde."
+
+            ]
+        },
+        {
+            "title" :"Pasta con crema di peperoni",
+            "type" : "Primi",
+            "ingredients" : [{
+                "key" : "Penne Rigate Bio 320 g"
+            },
+            {
+                "key" : "Pomodori ramati 250 g"
+            },
+            {
+                "key" : "Basilico q.b."
+            },
+            {
+                "key" : "Sale fino q.b."
+            },
+            {
+                "key" : "Peperoni rossi 400 g"
+            },
+            {
+                "key" : "Aglio 1 spicchio"
+            },
+            {
+                "key" : "Olio extravergine d'oliva q.b."
+            },
+            {
+                "key" : "Pepe nero q.b."
+			}
+            ],
+            "steps" : [
+                "Per preparare la pasta con la crema di peperoni, mettete a bollire l'acqua della pasta. Nel frattempo lavate i peperoni, rimuovete la calotta, tagliateli per il senso della lunghezza ed eliminate i semini interni, quindi riduceteli a cubetti.",
+                "Tagliate grossolanamente il pomodoro ramato. Versate un filo d’olio in una casseruola e fate soffriggere l’aglio in camicia. Aggiungete i cubetti di peperone",
+                "E il pomodoro, poi aromatizzate con il pepe e le foglie di basilico. Cuocete a fuoco medio per circa 15 minuti mescolando di tanto in tanto",
+				"Quando i peperoni saranno cotti, versate la pasta nell'acqua che intanto sarà arrivata a bollore e cuocetela per il tempo indicato. Intanto versate i peperoni cotti col pomodoro in un contenitore alto e frullate tutto con il mixer a immersione.",
+				"Trasferite la crema ottenuta in una padella o nella stessa in cui avete cotto i peperoni, accendete il fuoco basso, unite un mestolo di acqua di cottura della pasta e poi, una volta cotta al dente, scolate la pasta direttamente nella crema di peperoni.",
+                "Mantecate pochi istanti il tempo di amalgamare bene la pasta, poi trasferite nei piatti da portata e aromatizzate con ancora qualche fogliolina di basilico fresca. La vostra pasta con crema di peperoni è pronta per essere servita."
+
+            ]
+        }
 
 	]
 }

@@ -12,10 +12,6 @@ class RicetteScreen extends React.Component {
         backgroundColor:'#ff8100',
       },
 
-      headerTintColor:{
-        color:'white',
-      },
-
       headerTitleStyle:{
         color: 'white',
         //alignContent: 'center',
