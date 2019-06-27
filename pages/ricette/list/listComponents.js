@@ -2,6 +2,7 @@ import React from 'react';
 import { SafeAreaView, AsyncStorage, TouchableHighlight, Text, View, FlatList,ImageBackground} from 'react-native';
 import { styles } from '../../../styles/lista.js';
 import json from '../../../src/recipes/pasta_asciutta.json';
+import { ScrollView } from 'react-native-gesture-handler';
 
 class listComponents extends React.Component {
   constructor(props)
@@ -37,19 +38,26 @@ class listComponents extends React.Component {
         
         {/*lista*/}
         <View>
+          <View>
             <Text style={{fontSize: 23, paddingLeft:15, paddingTop:10}}>Ingredienti:</Text>
-            <FlatList
-              data = {this.state.data1.ingredients}
-              style={{top:25}}
-              extraData = {this.state}
-              renderItem ={ ({item}) =>
-              <View style={{paddingLeft:15}}>
-                <Text style={styles.text}> ◊ {item.key}</Text>
-              </View>
-                }    
-              >
-              </FlatList>  
+          </View>
+          <SafeAreaView style={{paddingBottom: 200}}>
+            <View>
+              <FlatList
+                data = {this.state.data1.ingredients}
+                style={{top:25}}
+                extraData = {this.state}
+                renderItem ={ ({item}) =>
+                <View style={{paddingLeft:15}}>
+                  <Text style={styles.text}> ◊ {item.key}</Text>
+                </View>
+                  }    
+                >
+              </FlatList>
+            </View>
+          </SafeAreaView>
         </View>
+        
         {/*end_lista*/}
           
         {/*bottone*/}
