@@ -40,11 +40,11 @@ class HomeScreen extends React.Component {
 
     render() {
       return (
-        <ImageBackground source={require('../../image/home1.jpg')}
+        <ImageBackground source={require('../../image/home21.jpg')}
             style={{flex:1, height: undefined, width: undefined}} resizeMethod="auto"
         >     
         <View style={styles.home}>    
-          <Image source={require('../../image/logo21.png')} style={{ position:'absolute',top:20,width: 200, height: 120}}/>
+          <Image source={require('../../image/logo21.png')} style={{ position:'absolute',top:90,width: 200, height: 120}}/>
 
             <Text style={styles.textHome}>Hi,welcome!</Text>
            
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
   textHome:{
     flex:0.10,
     alignItems: 'center',
-    color:'white',
+    color:'#4d4d4d',
     fontFamily: 'notoserif', 
     fontSize:25,
   },
