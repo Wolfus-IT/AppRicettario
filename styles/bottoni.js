@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { withOrientation } from 'react-navigation';
 
 const styles = StyleSheet.create({
   container: {
@@ -8,6 +9,7 @@ const styles = StyleSheet.create({
   },
 
   buttonStyle: {
+    
     paddingTop: 15,
     paddingBottom: 15,
     borderRadius: 17,

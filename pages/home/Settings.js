@@ -4,7 +4,7 @@ import { Text, View, StyleSheet, Button, Image,ImageBackground} from 'react-nati
 class Settings extends React.Component {
   
   static navigationOptions = {
-    title: 'About',
+    title: 'Settings',
   };
   
     render() {
