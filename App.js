@@ -4,7 +4,7 @@ import { createDrawerNavigator, createAppContainer, createStackNavigator, Drawer
 
 //pagine home
 import HomeScreen from './pages/home/HomeScreen';
-import Settings from './pages/home/Settings';
+import About from './pages/home/About';
 import Catalogo from './pages/ricette/Catalogo';
 import ContactUs from  './pages/home/contactUs';
 
@@ -63,7 +63,7 @@ const MyStackNavigator = createStackNavigator({
 const MyDrawerNavigator = createDrawerNavigator({
   Home: MyStackNavigator,
   ContactUs: { screen: ContactUs },
-  Settings: { screen: Settings }
+  About: { screen: About }
 },
 {
   contentComponent: CustomDrawerContentComponent
