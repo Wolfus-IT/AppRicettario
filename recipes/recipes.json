@@ -616,7 +616,101 @@
                 "Mantecate pochi istanti il tempo di amalgamare bene la pasta, poi trasferite nei piatti da portata e aromatizzate con ancora qualche fogliolina di basilico fresca. La vostra pasta con crema di peperoni è pronta per essere servita."
 
             ]
+        },
+        {
+            "title" :"Insalata di riso",
+            "type" : "Primi",
+            "ingredients" : [{
+                "key" : "Riso Arborio 300 g"
+            },
+            {
+                "key" : "Pomodori ramati 150 g"
+            },
+            {
+                "key" : "Prosciutto cotto a cubetti 100 g"
+            },
+            {
+                "key" : "Peperoni rossi 75 g"
+            },
+            {
+                "key" : "Olive nere denocciolate 80 g"
+            },
+            {
+                "key" : "Erba cipollina q.b."
+            },
+            {
+                "key" : "Tonno sott'olio sgocciolato 200 g"
+            },
+            {
+                "key" : "Caciocavallo 150 g"
+			},
+            {
+                "key" : "Pisellini 80 g"
+            },
+            {
+                "key" : "Peperoni gialli 75 g"
+            },
+            {
+                "key" : "Cetriolini sottaceto 80 g"
+			},
+            {
+                "key" : "Sale fino q.b."
+			}
+            ],
+            "steps" : [
+                "Per realizzare l’insalata di riso classica ponete sul fuoco una pentola colma di acqua salata e una volta che avrà raggiunto il bollore versate i piselli e sbollentateli per circa 3 minuti. Una volta trascorso questo tempo, scolate i piselli e nella stessa acqua versate il riso. Cuocete il riso 2-3 minuti in meno rispetto ai tempi di cottura indicati sulla confezione.",
+                "Nel frattempo occupatevi del condimento: lavate i peperoni, eliminate il picciolo, i semi e i filamenti interni, tagliateli prima a listarelle e poi a cubetti e poneteli in una ciotola capiente dove raccoglierete tutti gli altri ingredienti.",
+                "Lavate e tagliate a metà anche i pomodori, scavate la polpa con un cucchiaino e tagliateli a cubetti.",
+				"Tagliate a cubetti il prosciutto cotto. Ricavate dei cubetti anche dal caciocavallo e tagliate a rondelle i cetriolini sottaceto",
+				"E le olive denocciolate. Quando mancheranno circa 2-3 minuti dalla cottura, scolate il riso e lasciatelo raffreddare distribuendolo su un vassoio ben freddo (precedentemente conservato in frigorifero) così da agevolare il raffreddamento del riso.",
+				"Aromatizzate il condimento con l’erba cipollina tagliata a piccole rondelle, aggiungete anche i piselli e il riso che si saranno intanto raffreddati. Per finire incorporate i filetti di tonno sbriciolati",
+                "e il prosciutto cotto, aggiustate di sale e mescolate con un cucchiaio. Coprite la ciotola con la pellicola e lasciatela in frigorifero fino al momento di servirla così sarà ben fredda e i sapori si saranno amalgamati"
+			]
+        },
+        {
+            "title" :"Risotto alla salsiccia",
+            "type" : "Primi",
+            "ingredients" : [{
+                "key" : "Riso Carnaroli 320 g"
+            },
+            {
+                "key" : "Brodo di carne q.b."
+            },
+            {
+                "key" : "Vino bianco ½ bicchiere"
+            },
+            {
+                "key" : "Pepe nero q.b."
+            },
+            {
+                "key" : "Burro freddo di frigo 40 g"
+            },
+            {
+                "key" : "Salsiccia (o luganega) 300 g"
+            },
+            {
+                "key" : "Zafferano 1 bustina"
+            },
+            {
+                "key" : "Scalogno 1"
+			},
+            {
+                "key" : "Olio extravergine d'oliva q.b."
+            },
+            {
+                "key" : "Parmigiano reggiano 50 g"
+			}
+            ],
+            "steps" : [
+                "Per preparare il risotto alla salsiccia, preparate il brodo di carne. Poi passate a pulire lo scalogno, tritatelo finemente. Poi passate alle salsicce: incidetele ed eliminate il budello, quindi con il dorso della lama schiacciate la carne.",
+                "Spostatevi ai fornelli. Mettete sul fuoco una casseruola e versate un giro d’olio. Lasciate scaldare qualche istante prima di aggiungere lo scalogno. Fate insaporire a fiamma medio bassa, basteranno pochi minuti perchè appassisca. Dopodiché aggiungete la salsiccia e lasciatela rosolare per 4-5 minuti, mescolando spesso. Aggiungete il riso",
+                "quindi fate tostare e insaporire mescolando e poi sfumate con il vino bianco. Non appena l’alcol sarà evaporato cominciate la cottura del riso bagnandolo con il brodo caldo: versatelo a mestolate di tanto in tanto. Quindi aggiungetelo non appena la mestolata precedentemente è stata assorbita.",
+				"Poi versate lo zafferano e mescolate per amalgamarlo. Quando il riso è pronto togliete dal fuoco e mantecate aggiungendo il burro e il Parmigiano",
+                "Amalgamate accuratamente. Ecco pronto il vostro risotto alla salsiccia, non vi resta che gustarlo!"
+
+            ]
         }
+
 
 	]
 }
