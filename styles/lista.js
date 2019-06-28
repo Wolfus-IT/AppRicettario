@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ff8100',
     position: 'relative',
     alignItems: 'center',
-    bottom: 15,
+    bottom: 50,
   },
 
   text:{

@@ -1,17 +1,16 @@
 {
   "expo": {
-    "name": "Ricettario",
-    "slug": "AppRicettario",
+    "name": "ChefNOW",
+    "slug": "Ricettario",
     "privacy": "public",
     "sdkVersion": "33.0.0",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./image/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
